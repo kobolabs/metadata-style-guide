@@ -117,13 +117,14 @@ Title: The Shark in the Park
 `</titleelement>`</br>
 `</titledetail>`</br>
 </br>
+
+
 ### Common Errors (example)	</br>
 Incorrect: Fellowship of the Ring, The
 
 ### Character Limits	</br>
 250
 
-### Notes</br>
 
 --- template --- 
 
