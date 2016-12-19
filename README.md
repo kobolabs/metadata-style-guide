@@ -26,9 +26,10 @@
 
 </br></br>
 
-## eISBN
-_**Required**_
-
+## eISBN 
+```ruby
+Required 
+```
 ### Definition</br>
 Your eBook's electronic ISBN. Must be 13 digits in length.
   
