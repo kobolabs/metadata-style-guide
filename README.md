@@ -8,7 +8,7 @@
 * [Title](#title) </br>
 * [Publisher](#publisher)</br>
 * [Contributor (Author, Editor, etc.)](#contributor-author-editor-etc)</br>
-* Language</br>
+* [Language](#language)</br>
 * Subject Code</br>
 * Sales Rights</br>
 * Price/Price Type Code (ONIX only)</br>
@@ -128,7 +128,28 @@ Incorrect: Shubert, David
 Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
 
 </br></br>
+## Language	
+### Definition</br>
+Excel: The language code that indicates the language in which your eBook is written (two characters).
+ONIX: Language role (language of text, language of original text, etc) and the three-character language code. 
 
+</br>
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** | Language: EN                            | `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>eng</LanguageCode>`</br>`</Language>`</br> 
+**Short Tag**      | N/A                            |`<language>`</br>`<b253>01</b253>`</br>`<b252>eng</b252>`</br>`</language>`</br>    
+**Character Limits**	|2|3
+
+</br>
+### :warning: Common Errors (example)	</br>
+Excel: BRL, English, Eng 
+
+ 
+</br>
+### Notes</br>
+Please note that currently we don't support multiple language codes for a single title. Please choose one specific language code for the text and include information about the bilingual nature of the text in the description. We suggest selecting the language code for the audience the title most widely serves. 
+</br></br>
 --- template --- 
 
 ## Field	
@@ -137,6 +158,7 @@ Excel: This is where you can list the names of your eBook's contributors. If you
 
 ### Best Practice	</br>
 > 
+</br>
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
