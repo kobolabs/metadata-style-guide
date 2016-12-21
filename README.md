@@ -12,8 +12,8 @@
 * [Subject Code](#subject-code)</br>
 * [Sales Rights](#sales-rights)</br>
 * [Price/Price Type Code (ONIX only)](#priceprice-type-code-onix-only)</br>
-* Price Date Role (ONIX only)</br>
-* Publishing Status</br>
+* [Price Effective Date & Price Date Role (ONIX only)](#price-effective-date--price-date-role-onix-only)</br>
+* [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
 * Publication Date</br>
@@ -229,6 +229,97 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
 MXN prices must also be listed as whole numbers with zero decimal values. For MXN pricing, if decimals are provided, the prices will be rounded up or down (e.g. 249.25 MXN will be rounded to 249 MXN, while 249.75 MXN will be rounded to 250 MXN). 
 
 In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONIX, the Unpriced Item Type code is accepted for free titles when used correctly.
+</br></br>
+## Price Effective Date & Price Date Role (ONIX only)	
+### Definition</br>
+Price Effective Date (ONIX 2.1) and Price Date Role (ONIX 3.0) composites allow you to schedule promotional prices with your ONIX feed.
+
+### Best Practice	</br>
+> Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.
+
+> Ensure the promo price has both a start and end date. 
+
+> Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. 
+
+### Correct Usage (example)	</br>
+Example of a sample scheduled price reduction, with embedded comments for clarification:
+
+ONIX 2.1 example (with embedded notes for clarification):</br>
+`<price>`</br>
+`<j148>41</j148>`</br>
+`<j151>7.99</j151>`</br>
+`<j152>USD</j152>`</br>
+`<j162>20151222</j162>`</br>
+`</price>`</br>
+**--- the above price will end at 23:59 EST on Dec 22**</br>
+`<price>`</br>
+`<j148>41</j148>`</br>
+`<j151>3.99</j151>`</br>
+`<j152>USD</j152>`</br>
+`<j161>20151223</j161>`</br>
+`<j162>20151230</j162>`</br>
+`</price>`</br>
+**--- the promo price starts at 0:00 EST Dec 23 and ends 23:59 EST Dec 30**</br>
+`<price>`</br>
+`<j148>41</j148>`</br>
+`<j151>7.99</j151>`</br>
+`<j152>USD</j152>`</br>
+`<j161> 20151231</j161>`</br>
+`</price>`</br>
+**--- the regular price is reinstated at 0:00 EST Dec 31</br>
+Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and PriceDateRole 15 = Until Date**</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>10.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>15</PriceDateRole>`</br>
+`<Date>20151221</Date>`</br>
+`</PriceDate>`</br>
+`</Price>`</br>
+**--- the above price will end at 23:59 EST on Dec 21**</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>8.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>14</PriceDateRole>`</br>
+`<Date>20151222</Date>`</br>
+`</PriceDate>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>15</PriceDateRole>`</br>
+`<Date>20151230</Date>`</br>
+`</PriceDate>`</br>
+`</Price>`</br>
+**--- the promo price starts at 0:00 EST on Dec 22 and ends 23:59 EST Dec 30**</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>10.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>14</PriceDateRole>`</br>
+`<Date>20151231</Date> </PriceDate>`</br>
+`</Price>`</br>
+**--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
+</br></br>
+
+## Publishing Status	
+### Definition</br>
+Your eBook's publishing status.
+
+### Best Practice	</br>
+> To place your title for sale or preorder, indicate active. To remove your title from sale, indicate deactivated.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Publishing Status: active OR deactivated| `<PublishingStatus>02</PublishingStatus>`</br>
+**Short Tag**      |N/A                             |`<b394>02</b394>`</br>
+### :warning: Common Errors (example)	</br>
+Excel: "inactive" instead of "deactivated"
+
+### Notes</br>
+ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for activations and deactivations. A value of 04 will activate a book. A value of 02 will indicate that the book should be put on preorder. Any other value will quarantine the book. Any titles listed as Forthcoming (02) or Active (04) will be activated. All others will be deactivated, so we encourage you to review and update all of your titles. Please pay special attention to any titles with value 00 (Unspecified).  
 </br></br>
 --- template --- 
 
