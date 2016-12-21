@@ -11,7 +11,7 @@
 * [Language](#language)</br>
 * [Subject Code](#subject-code)</br>
 * [Sales Rights](#sales-rights)</br>
-* Price/Price Type Code (ONIX only)</br>
+* [Price/Price Type Code (ONIX only)](#Price-Price-Type Code (ONIX only))</br>
 * Price Date Role (ONIX only)</br>
 * Publishing Status</br>
 
@@ -153,7 +153,7 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** |Categorization Code:JNF001100</br>Categorization Type: BISAC                           |BISAC</br>`<BASICMainSubject> JNF001100</BASICMainSubject>`</br>`<Subject>`</br>`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>`<SubjectCode>JNF028000</SubjectCode>`</br>`</Subject>`</br>BIC</br>`<BICMainSubject> YNU</BICMainSubject>`</br>                            |`<Subject>`</br>`<MainSubject/>`</br>`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>`<SubjectCode> JNF001000</SubjectCode>`</br>`</Subject>`</br>`<Subject>`</br>`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>`<SubjectCode> JNF028020</SubjectCode>`</br>`</Subject>`</br> 
 **Short Tag**      |N/A                             |BISAC</br>`<b064> JNF001100</b064>`</br>`<subject>`</br>`<b067>10</b067>`</br>`<b069> JNF028000</b069>`</br>`<subject>`</br>BIC</br>`<b065>YNU</b065>`</br>                            |`<subject>`</br>`<x425/>`</br>`<b067>10</b067>`</br>`<b069> JNF001000</b069>`</br>`</subject>`</br>`<subject>`</br>`<b067>10</b067>`</br> 
-**Character Limits**	|N/A                   |N/A                         |N/A
+
 ### Notes</br>
 Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
 We do not currently accept Thema codes. 
@@ -163,10 +163,10 @@ We do not currently accept Thema codes.
 Your eBook's sales rights.
  
 ### Best Practice	</br>
-> To indicate sales rights use two-letter territory codes to specify where your ebook can be sold according to the rights your company holds. `<SalesRightsType>` is important in indicating specific type of rights held (exclusive, non-exclusive, not for sale, etc). Please see correct usage for how to declare sales rights in ONIX.
+> To indicate sales rights use two-letter territory codes to specify where your ebook can be sold according to the rights your company holds. `<SalesRightsType>` is important in indicating specific type of rights held (exclusive, non-exclusive, not for sale, etc). Please see correct usage for how to declare sales rights in ONIX.</br>
 >
-> ONIX 2.1: Please use upper-case characters and separate each territory with a space in `<RightsCountry>US CA</RightsCountry>`. World Rights should be indicated as `<RightsTerritory>WORLD</RightsTerritory>`
-> ONIX 3.0: Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>`
+> ONIX 2.1: Please use upper-case characters and separate each territory with a space in `<RightsCountry>US CA</RightsCountry>`. World Rights should be indicated as `<RightsTerritory>WORLD</RightsTerritory>`</br>
+> ONIX 3.0: Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>`</br>
 >
 > Excel: Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma.
 
@@ -175,12 +175,66 @@ Your eBook's sales rights.
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** |US,CA,BR|`<SalesRights>`</br>`<SalesRightType>01</SalesRightsType>`</br>`<RightsCountry>US CA BR</RightsCountry>`</br>`</SalesRights>`</br>|`<SalesRights>`</br>`<SalesRightsType>01</SalesRightsType>`</br>`<Territory>`</br>`<CountriesIncluded>US CA BR</CountriesIncluded>`</br>`</Territory>`</br>`</SalesRights>`</br> 
 **Short Tag**      |N/A|Short tag: `<salesrights>`</br>`<b089>01</b089>`</br>`<b090>US CA BR</b090>`</br>`</salesrights>`</br>                            |`<salesrights>`</br>`<b089>01</b089>`</br>`<territory>`</br>`<x449>US CA BR</x449>`</br>`</territory>`</br>`<salesrights>`</br> 
-**Character Limits**	|N/A                   |N/A                         |N/A
+
 ### :warning: Common Errors (example)	</br>
 Excel: Australia
 
 ### Notes</br>
 Kobo only supports 3 types of `<SalesRightsType>` (`<b089>`) values: 01 - for sale (exclusive rights) 02 - for sale (non-exclusive rights) 03 - not for sale
+</br></br>
+
+## Price/Price Type Code (ONIX only)	
+### Definition</br>
+Your eBook's price.
+
+The Price Type Code specifies the type of price submitted (e.g. agency, wholesale, IPP).
+
+### Best Practice	</br>
+> **Price**
+
+> In **ONIX**, please follow the 2.1 or 3.0 specification.
+
+> In **Excel** price:</br>
+  > * Must not contain commas.</br>
+  > * Must be formatted as a number.</br>
+  > * Must not contain currency symbols.</br>
+  > * Currency must be in upper-case format.</br>
+
+> **Price Type Code**
+
+> Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CA, US), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
+
+> **`<PriceType>`**
+
+> Codes</br>
+> Prices without tax included (CA and US)</br>
+> 01 – Wholesale prices in Canada and the US, without tax included</br>
+> 41 – Agency prices in Canada and the US, without tax included</br>
+> 03 – IPP prices in Canada and the US, without tax included</br>
+</br>
+> Prices with tax included (EU, UK, and AU)</br>
+> 02 – Wholesale prices in the EU, UK, and AU, with tax included</br>
+> 42 – Agency prices in the EU, UK, and AU, with tax included</br>
+> 04 – IPP prices in the EU, UK, and AU, with tax included" </br>
+
+### Correct Usage (example)	</br>
+ 
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** |Price: 7.99</br>Currency: CAD|`<price> `</br>`<PriceTypeCode>41</PriceTypeCode> `</br>`<PriceAmount>12.99</PriceAmount> `</br>`<CurrencyCode>CAD</CurrencyCode> `</br>`</price> `</br>|`<price> `</br>`<PriceType>02>/<PriceType> `</br>`<PriceAmount>13.99</PriceAmount> `</br>`<CurrencyCode>GBP</CurrencyCode> `</br>`</price> `</br> 
+**Short Tag**      |N/A|`<price> `<j148>41</j148> `</br>`<j151>12.99</j151> `</br>`<j152>CAD</j152> `</br>`</price> |`<price> `</br>`<x462>02</462> `</br>`<j151>13.99</j151> `</br>`<j152>GBP</j152> `</br>`</price>`</br> 
+
+### :warning: Common Errors (example)	</br>
+  * Incorrect price: $3.99</br>
+  * Incorrect price: 1,299.99</br>
+  * Incorrect currency in Excel: cad, CA</br>
+
+### Notes</br>
+**Excel and ONIX**: JPY prices must be listed as a whole number with zero decimal values. Hiding decimal places with values other than zero will cause your entry to **fail**. 
+
+MXN prices must also be listed as whole numbers with zero decimal values. For MXN pricing, if decimals are provided, the prices will be rounded up or down (e.g. 249.25 MXN will be rounded to 249 MXN, while 249.75 MXN will be rounded to 250 MXN). 
+
+In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONIX, the Unpriced Item Type code is accepted for free titles when used correctly.
 </br></br>
 --- template --- 
 
