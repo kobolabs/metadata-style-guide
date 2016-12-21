@@ -6,7 +6,7 @@
 ### Required Field
 * [eISBN](#eisbn) </br>
 * [Title](#title) </br>
-* Publisher</br>
+* [Publisher](#publisher)</br>
 * Contributor (Author, Editor, etc.)</br>
 * Language</br>
 * Subject Code</br>
