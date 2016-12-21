@@ -11,7 +11,7 @@
 * [Language](#language)</br>
 * [Subject Code](#subject-code)</br>
 * [Sales Rights](#sales-rights)</br>
-* [Price/Price Type Code (ONIX only)](#Price-Price-Type Code (ONIX only))</br>
+* [Price/Price Type Code (ONIX only)](#priceprice-type-code-onix-only)</br>
 * Price Date Role (ONIX only)</br>
 * Publishing Status</br>
 
@@ -191,21 +191,17 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
 
 ### Best Practice	</br>
 > **Price**
-
 > In **ONIX**, please follow the 2.1 or 3.0 specification.
-
 > In **Excel** price:</br>
   > * Must not contain commas.</br>
   > * Must be formatted as a number.</br>
   > * Must not contain currency symbols.</br>
   > * Currency must be in upper-case format.</br>
-
+  
 > **Price Type Code**
-
 > Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CA, US), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
 
 > **`<PriceType>`**
-
 > Codes</br>
 > Prices without tax included (CA and US)</br>
 > 01 – Wholesale prices in Canada and the US, without tax included</br>
