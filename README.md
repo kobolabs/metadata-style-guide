@@ -7,7 +7,7 @@
 * [eISBN](#eisbn) </br>
 * [Title](#title) </br>
 * [Publisher](#publisher)</br>
-* Contributor (Author, Editor, etc.)</br>
+* [Contributor (Author, Editor, etc.)]</br>
 * Language</br>
 * Subject Code</br>
 * Sales Rights</br>
@@ -96,11 +96,39 @@ Your publisher name as it should appear on the Kobo store.
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-Reference Name |Publisher: Left Shark Editions|`<Publisher>`</br>`<PublishingRole>01</PublishingRole>`</br>`<PublisherName>Left Shark Editions</PublisherName>`</br>`</Publisher>`</br>
-Short Tag      | N/A                            |`<publisher> `</br>`<b291>01</b291>`</br>`<b081>Left Shark Editions</b081>`</br>`</publisher>`</br>   
+**Reference Name** |Publisher: Left Shark Editions|`<Publisher>`</br>`<PublishingRole>01</PublishingRole>`</br>`<PublisherName>Left Shark Editions</PublisherName>`</br>`</Publisher>`</br>
+**Short Tag**      | N/A                            |`<publisher> `</br>`<b291>01</b291>`</br>`<b081>Left Shark Editions</b081>`</br>`</publisher>`</br>   
 **Character Limits**	|250|250
 
 </br></br>
+
+## Contributor (Author, Editor, etc.)
+
+### Definition</br>
+The author and/or editor name(s)
+
+### Best Practice	</br>
+Please use the format: First Name + Last Name for this field. No commas or name order reversal.
+
+ONIX: If your title does not have a contributor, you can now use the field <NoContributor/> or <n339/> in your ONIX. We will instead list the imprint or publisher name as the byline.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Contributor 1: David Shubert</br>Contributor Type: A01|`<Contributor>`</br>`<SequenceNumber>1</SequenceNumber>`</br>`<ContributorRole>A01</ContributorRole>`</br>`<PersonName>David Shubert PhD</PersonName>`</br>`<NamesBeforeKey>David</NamesBeforeKey>`</br>`<KeyNames>Shubert</KeyNames>`</br>`<LettersAfterNames>PhD</LettersAfterNames>`</br>`</Contributor>`</br>  
+**Short Tag**      |N/A                             |`<contributor>`</br>`<b034>1</b034>`</br>`<b035>A01</b035>`</br>`<b036>Ben Byrne</b036>`</br>`<b037>Byrne, Ben</b037>`</br>`<b039>Ben</b039>`</br>`<b040>Byrne</b040>`</br>`<b251>GB</b251>`</br>`</contributor>`</br>   
+**Character Limits**	|250|250
+
+</br>
+### :warning: Common Errors (example)	</br>
+Incorrect: Shubert, David
+
+</br>
+### Notes</br>
+Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
+
+</br></br>
+
 --- template --- 
 
 ## Field	
@@ -111,14 +139,14 @@ Short Tag      | N/A                            |`<publisher> `</br>`<b291>01</b
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-Reference Name |                             | 
-Short Tag      |                             |   
+**Reference Name** |                             | 
+**Short Tag**      |                             |   
 **Character Limits**	|250|250
  
                | Excel                       | ONIX 2.1                   | ONIX 3.0
--------------- | --------------------------- | ---------------------------|
-Reference Name |                             |                            | 
-Short Tag      |                             |                            | 
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** |                             |                            | 
+**Short Tag**      |                             |                            | 
 **Character Limits**	|250                   |250                         |250
 </br>
 ### :warning: Common Errors (example)	</br>
