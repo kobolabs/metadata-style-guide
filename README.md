@@ -7,7 +7,7 @@
 * [eISBN](#eisbn) </br>
 * [Title](#title) </br>
 * [Publisher](#publisher)</br>
-* [Contributor (Author, Editor, etc.)]</br>
+* [Contributor (Author, Editor, etc.)](#contributor-author-editor-etc)</br>
 * Language</br>
 * Subject Code</br>
 * Sales Rights</br>
