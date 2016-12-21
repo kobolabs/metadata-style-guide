@@ -39,7 +39,7 @@
 Your eBook's electronic ISBN. Must be 13 digits in length.
   
 ### Best Practice	</br>
-In ONIX the ISBN must be unhyphenated.
+> In ONIX the ISBN must be unhyphenated.
 
 ### Correct Usage (example)	</br>
                | Excel                                   | ONIX 2.1 and 3.0
@@ -74,7 +74,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
   
   
 ### Best Practice	</br>
-Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
+> Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
 
 ### Correct Usage (example)	</br>
                | Excel                                   | ONIX 2.1                                | ONIX 3.0
@@ -108,9 +108,9 @@ Your publisher name as it should appear on the Kobo store.
 The author and/or editor name(s)
 
 ### Best Practice	</br>
-Please use the format: First Name + Last Name for this field. No commas or name order reversal.
-
-ONIX: If your title does not have a contributor, you can now use the field <NoContributor/> or <n339/> in your ONIX. We will instead list the imprint or publisher name as the byline.
+> Please use the format: First Name + Last Name for this field. No commas or name order reversal.
+>
+> ONIX: If your title does not have a contributor, you can now use the field <NoContributor/> or <n339/> in your ONIX. We will instead list the imprint or publisher name as the byline.
 
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
@@ -136,6 +136,7 @@ Excel: This is where you can list the names of your eBook's contributors. If you
 
 
 ### Best Practice	</br>
+> 
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
