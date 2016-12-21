@@ -9,7 +9,7 @@
 * [Publisher](#publisher)</br>
 * [Contributor (Author, Editor, etc.)](#contributor-author-editor-etc)</br>
 * [Language](#language)</br>
-* Subject Code</br>
+* [Subject Code](#subject-code)</br>
 * Sales Rights</br>
 * Price/Price Type Code (ONIX only)</br>
 * Price Date Role (ONIX only)</br>
@@ -48,7 +48,6 @@ Your eBook's electronic ISBN. Must be 13 digits in length.
 **Short Tag**      | N/A                                     | `<b221>03</b221>`</br>`<b244>9780826110077</b244>`</br>`</productidentifier>` </br>       
 **Character Limits**	|13 digits|13 digits
     
-</br>
 ### :warning: Common Errors (example)	</br>
   * 9781780000
   * 978-1443424523
@@ -116,7 +115,6 @@ The author and/or editor name(s)
 **Reference Name** |Contributor 1: David Shubert</br>Contributor Type: A01|`<Contributor>`</br>`<SequenceNumber>1</SequenceNumber>`</br>`<ContributorRole>A01</ContributorRole>`</br>`<PersonName>David Shubert PhD</PersonName>`</br>`<NamesBeforeKey>David</NamesBeforeKey>`</br>`<KeyNames>Shubert</KeyNames>`</br>`<LettersAfterNames>PhD</LettersAfterNames>`</br>`</Contributor>`</br>  
 **Short Tag**      |N/A                             |`<contributor>`</br>`<b034>1</b034>`</br>`<b035>A01</b035>`</br>`<b036>Ben Byrne</b036>`</br>`<b037>Byrne, Ben</b037>`</br>`<b039>Ben</b039>`</br>`<b040>Byrne</b040>`</br>`<b251>GB</b251>`</br>`</contributor>`</br>   
 **Character Limits**	|250|250
-</br>
 ### :warning: Common Errors (example)	</br>
 Incorrect: Shubert, David
 
@@ -135,12 +133,31 @@ ONIX: Language role (language of text, language of original text, etc) and the t
 **Reference Name** | Language: EN                            | `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>eng</LanguageCode>`</br>`</Language>`</br> 
 **Short Tag**      | N/A                            |`<language>`</br>`<b253>01</b253>`</br>`<b252>eng</b252>`</br>`</language>`</br>    
 **Character Limits**	|2|3
-</br>
 ### :warning: Common Errors (example)	</br>
 Excel: BRL, English, Eng 
 
 ### Notes</br>
 Please note that currently we don't support multiple language codes for a single title. Please choose one specific language code for the text and include information about the bilingual nature of the text in the description. We suggest selecting the language code for the audience the title most widely serves. 
+</br></br>
+## Subject Code	
+### Definition</br>
+A subject category code from the scheme identified (BISAC, BIC, etc), which will help catalogue ebooks.
+
+### Best Practice	</br>
+> Please always include a subject code so customers can more easily find your ebooks. Category codes help discoverability on site. Your chosen codes correspond to our category stores on site, so the more specific you can be, the better.
+> 
+> While it's beneficial to have a main subject, please include additional subject codes with increasing precision so your target audience will find your books.
+
+ 
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** |Categorization Code:JNF001100
+Categorization Type: BISAC                             |BISAC</br>`<BASICMainSubject> JNF001100</BASICMainSubject>`</br>`<Subject>`</br>`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>`<SubjectCode>JNF028000</SubjectCode>`</br>`</Subject>`</br>BIC</br>`<BICMainSubject> YNU</BICMainSubject>`</br>                            |`<Subject>`</br>`<MainSubject/>`</br>`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>`<SubjectCode> JNF001000</SubjectCode>`</br>`</Subject>`</br>`<Subject>`</br>`<SubjectSchemeIdentifier>10</SubjectSchemeIdentifier>`</br>`<SubjectCode> JNF028020</SubjectCode>`</br>`</Subject>`</br> 
+**Short Tag**      |N/A                             |BISAC</br>`<b064> JNF001100</b064>`</br>`<subject>`</br>`<b067>10</b067>`</br>`<b069> JNF028000</b069>`</br>`<subject>`</br>BIC</br>`<b065>YNU</b065>`</br>                            |`<subject>`</br>`<x425/>`</br>`<b067>10</b067>`</br>`<b069> JNF001000</b069>`</br>`</subject>`</br>`<subject>`</br>`<b067>10</b067>`</br> 
+**Character Limits**	|N/A                   |N/A                         |N/A
+### Notes</br>
+Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
+We do not currently accept Thema codes. 
 </br></br>
 --- template --- 
 
@@ -150,7 +167,7 @@ Please note that currently we don't support multiple language codes for a single
 
 ### Best Practice	</br>
 > 
-</br>
+
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
@@ -163,7 +180,6 @@ Please note that currently we don't support multiple language codes for a single
 **Reference Name** |                             |                            | 
 **Short Tag**      |                             |                            | 
 **Character Limits**	|250                   |250                         |250
-</br>
 ### :warning: Common Errors (example)	</br>
 
 ### Notes</br>
