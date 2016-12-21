@@ -81,7 +81,6 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 
 </br></br>
 ## Title
-_**Required**_
 
 ### Definition</br>
  Your eBook's title as it should appear on the Kobo store.
@@ -130,8 +129,32 @@ Incorrect: Fellowship of the Ring, The
 
 ### Character Limits	</br>
 250
+</br></br>
+## Publisher	
 
+### Definition</br>
+Your publisher name as it should appear on the Kobo store.
 
+### Correct Usage (example)	</br>
+  * **Excel**</br>
+Publisher: Left Shark Editions
+
+  * **ONIX 2.1 and 3.0** </br>
+    Reference Name:</br>
+`<Publisher>`</br>
+`<PublishingRole>01</PublishingRole>`</br>
+`<PublisherName>Left Shark Editions</PublisherName>`</br>
+`</Publisher>`</br>
+    Short Tag:
+`<publisher> `</br>
+`<b291>01</b291>`</br>
+`<b081>Left Shark Editions</b081>`</br>
+`</publisher>`</br>
+</br>
+
+### Character Limits	</br>
+250
+</br></br>
 --- template --- 
 
 ## Field	
@@ -140,12 +163,12 @@ Incorrect: Fellowship of the Ring, The
 ### Correct Usage (example)	</br>
   * **Excel**</br>
   * **ONIX 2.1 and 3.0** </br>
-    Reference Name:
+    Reference Name:</br>
     
     Short Tag:
 </br>
 ### Common Errors (example)	</br>
 ### Character Limits	</br>
 ### Notes</br>
-
+</br></br>
 --- template --- 
