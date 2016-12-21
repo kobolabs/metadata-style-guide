@@ -42,29 +42,16 @@ Your eBook's electronic ISBN. Must be 13 digits in length.
 In ONIX the ISBN must be unhyphenated.
 
 ### Correct Usage (example)	</br>
-  * **Excel**</br>
-eBook ISBN: 9780007322596  
-
-  * **ONIX 2.1 and 3.0** </br>
-    Reference Name:</br>
-`<ProductIdentifier>`</br>
-`<ProductIDType>03</ProductIDType>`</br>
-`<IDValue>9780826110077</IDValue>`</br>
-`</ProductIdentifier>`</br>    
-
-    Short Tag:</br>
-`<productidentifier>`</br>
-`<b221>03</b221>`</br>
-`<b244>9780826110077</b244>`</br>
-`</productidentifier>` </br>   
+               | Excel                                   | ONIX 2.1 and 3.0
+-------------- | --------------------------------------- | --------------------------------------- 
+**Reference Name** |eBook ISBN: 9780007322596                | `<ProductIdentifier>`</br>`<ProductIDType>03</ProductIDType>`</br>`<IDValue>9780826110077</IDValue>`</br>`</ProductIdentifier>`</br>`<productidentifier>`</br>   
+**Short Tag**      | N/A                                     | `<b221>03</b221>`</br>`<b244>9780826110077</b244>`</br>`</productidentifier>` </br>       
+**Character Limits**	|13 digits|13 digits
     
 </br>
-### Common Errors (example)	</br>
+### :warning: Common Errors (example)	</br>
   * 9781780000
   * 978-1443424523
-  
-### Character Limits	</br>
-13 digits
 
 ### Notes</br>
 ONIX: `ProductIDType` 03 is mandatory as it represents how your books will be identified in universal trading transactions.  
@@ -90,45 +77,16 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
 
 ### Correct Usage (example)	</br>
-  * **Excel**</br>
-Title: The Shark in the Park
-  * **ONIX 2.1** </br>
-    Reference Name:</br>
-`<Title>`</br>
-`<TitleType>01</TitleType>`</br>
-`<TitleText>The Shark In The Park</TitleText>`</br>
-`</Title>`</br>
-
-  * **ONIX 3.0** </br>
-   Reference Name:</br>   
-`<TitleDetail>`</br>
-`<TitleType>01</TitleType>`</br>
-`<TitleElement>`</br>
-`<TitleElementLevel>01</TitleElementLevel>`</br>
-`<TitlePrefix>The</TitlePrefix>`</br>
-`<TitleWithoutPrefix>Shark In The Park</TitleWithoutPrefix>`</br>
-`<Subtitle>Left Shark's Park Lark</Subtitle>`</br>
-`</TitleElement>`</br>
-`</TitleDetail>`</br>
-
-   Short Tag:</br>
-`<titledetail>`</br>
-`<b202>01</b202>`</br>
-`<titleelement>`</br>
-`<x409>01</x409>`</br>
-`<b030>The</b030>`</br>
-`<b031>Shark In The Park</b031>`</br>
-`<b029>Left Shark’s Park Lark</b029>`</br>
-`</titleelement>`</br>
-`</titledetail>`</br>
-</br>
+               | Excel                                   | ONIX 2.1                                | ONIX 3.0
+-------------- | --------------------------------------- | --------------------------------------- |---------------------------------------
+**Reference Name** |Title: The Shark in the Park| `<Title>`</br>`<TitleType>01</TitleType>`</br>`<TitleText>The Shark In The Park</TitleText>`</br>`</Title>`</br> |`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel>`</br>`<TitlePrefix>The</TitlePrefix>`</br>`<TitleWithoutPrefix>Shark In The Park</TitleWithoutPrefix>`</br>`<Subtitle>Left Shark's Park Lark</Subtitle>`</br>`</TitleElement>`</br>`</TitleDetail>`</br>
+**Short Tag**      | N/A|N/A|`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`<x409>01</x409>`</br>`<b030>The</b030>`</br>`<b031>Shark In The Park</b031>`</br>`<b029>Left Shark’s Park Lark</b029>`</br>`</titleelement>`</br>`</titledetail>`</br>      
+**Character Limits**	|250|250|250
 
 
-### Common Errors (example)	</br>
+### :warning: Common Errors (example)	</br>
 Incorrect: Fellowship of the Ring, The
 
-### Character Limits	</br>
-250
 </br></br>
 ## Publisher	
 
@@ -136,40 +94,37 @@ Incorrect: Fellowship of the Ring, The
 Your publisher name as it should appear on the Kobo store.
 
 ### Correct Usage (example)	</br>
-  * **Excel**</br>
-Publisher: Left Shark Editions
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+Reference Name |Publisher: Left Shark Editions|`<Publisher>`</br>`<PublishingRole>01</PublishingRole>`</br>`<PublisherName>Left Shark Editions</PublisherName>`</br>`</Publisher>`</br>
+Short Tag      | N/A                            |`<publisher> `</br>`<b291>01</b291>`</br>`<b081>Left Shark Editions</b081>`</br>`</publisher>`</br>   
+**Character Limits**	|250|250
 
-  * **ONIX 2.1 and 3.0** </br>
-   Reference Name:</br>
-`<Publisher>`</br>
-`<PublishingRole>01</PublishingRole>`</br>
-`<PublisherName>Left Shark Editions</PublisherName>`</br>
-`</Publisher>`</br>
-
-   Short Tag:</br>
-`<publisher> `</br>
-`<b291>01</b291>`</br>
-`<b081>Left Shark Editions</b081>`</br>
-`</publisher>`</br>
-
-### Character Limits	</br>
-250
 </br></br>
 --- template --- 
 
 ## Field	
 ### Definition</br>
+
+
 ### Best Practice	</br>
 ### Correct Usage (example)	</br>
-  * **Excel**</br>
-  * **ONIX 2.1 and 3.0** </br>
-    Reference Name:</br>
-    
-    
-    Short Tag:</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+Reference Name |                             | 
+Short Tag      |                             |   
+**Character Limits**	|250|250
+ 
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|
+Reference Name |                             |                            | 
+Short Tag      |                             |                            | 
+**Character Limits**	|250                   |250                         |250
 </br>
-### Common Errors (example)	</br>
-### Character Limits	</br>
+### :warning: Common Errors (example)	</br>
+
+ 
+</br>
 ### Notes</br>
 </br></br>
 --- template --- 
