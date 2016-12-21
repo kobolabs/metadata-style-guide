@@ -151,7 +151,6 @@ Publisher: Left Shark Editions
 `<b291>01</b291>`</br>
 `<b081>Left Shark Editions</b081>`</br>
 `</publisher>`</br>
-</br>
 
 ### Character Limits	</br>
 250
