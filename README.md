@@ -71,8 +71,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 
 ### Definition</br>
  Your eBook's title as it should appear on the Kobo store.
-  
-  
+ 
 ### Best Practice	</br>
 > Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
 
@@ -82,7 +81,6 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 **Reference Name** |Title: The Shark in the Park| `<Title>`</br>`<TitleType>01</TitleType>`</br>`<TitleText>The Shark In The Park</TitleText>`</br>`</Title>`</br> |`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel>`</br>`<TitlePrefix>The</TitlePrefix>`</br>`<TitleWithoutPrefix>Shark In The Park</TitleWithoutPrefix>`</br>`<Subtitle>Left Shark's Park Lark</Subtitle>`</br>`</TitleElement>`</br>`</TitleDetail>`</br>
 **Short Tag**      | N/A|N/A|`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`<x409>01</x409>`</br>`<b030>The</b030>`</br>`<b031>Shark In The Park</b031>`</br>`<b029>Left Shark’s Park Lark</b029>`</br>`</titleelement>`</br>`</titledetail>`</br>      
 **Character Limits**	|250|250|250
-
 
 ### :warning: Common Errors (example)	</br>
 Incorrect: Fellowship of the Ring, The
@@ -118,12 +116,10 @@ The author and/or editor name(s)
 **Reference Name** |Contributor 1: David Shubert</br>Contributor Type: A01|`<Contributor>`</br>`<SequenceNumber>1</SequenceNumber>`</br>`<ContributorRole>A01</ContributorRole>`</br>`<PersonName>David Shubert PhD</PersonName>`</br>`<NamesBeforeKey>David</NamesBeforeKey>`</br>`<KeyNames>Shubert</KeyNames>`</br>`<LettersAfterNames>PhD</LettersAfterNames>`</br>`</Contributor>`</br>  
 **Short Tag**      |N/A                             |`<contributor>`</br>`<b034>1</b034>`</br>`<b035>A01</b035>`</br>`<b036>Ben Byrne</b036>`</br>`<b037>Byrne, Ben</b037>`</br>`<b039>Ben</b039>`</br>`<b040>Byrne</b040>`</br>`<b251>GB</b251>`</br>`</contributor>`</br>   
 **Character Limits**	|250|250
-
 </br>
 ### :warning: Common Errors (example)	</br>
 Incorrect: Shubert, David
 
-</br>
 ### Notes</br>
 Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
 
@@ -132,7 +128,6 @@ Excel: This is where you can list the names of your eBook's contributors. If you
 ### Definition</br>
 Excel: The language code that indicates the language in which your eBook is written (two characters).
 ONIX: Language role (language of text, language of original text, etc) and the three-character language code. 
-
 </br>
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1 and 3.0
@@ -140,13 +135,10 @@ ONIX: Language role (language of text, language of original text, etc) and the t
 **Reference Name** | Language: EN                            | `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>eng</LanguageCode>`</br>`</Language>`</br> 
 **Short Tag**      | N/A                            |`<language>`</br>`<b253>01</b253>`</br>`<b252>eng</b252>`</br>`</language>`</br>    
 **Character Limits**	|2|3
-
 </br>
 ### :warning: Common Errors (example)	</br>
 Excel: BRL, English, Eng 
 
- 
-</br>
 ### Notes</br>
 Please note that currently we don't support multiple language codes for a single title. Please choose one specific language code for the text and include information about the bilingual nature of the text in the description. We suggest selecting the language code for the audience the title most widely serves. 
 </br></br>
@@ -174,8 +166,6 @@ Please note that currently we don't support multiple language codes for a single
 </br>
 ### :warning: Common Errors (example)	</br>
 
- 
-</br>
 ### Notes</br>
 </br></br>
 --- template --- 
