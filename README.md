@@ -15,7 +15,7 @@
 * Price Date Role (ONIX only)</br>
 * Publishing Status</br>
 
- ### Strongly Recommended
+### Strongly Recommended
 * Publication Date</br>
 * On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)</br>
 * Related Product</br>
@@ -24,7 +24,7 @@
 * Product Availability</br>
 * Master Brand</br>
 
- ### Recommended if applicable
+### Recommended if applicable
 * Subtitle</br>
 * Imprint</br>
 
