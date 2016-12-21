@@ -2,7 +2,7 @@
 
 # Kobo Metadata Style Guide
 
-## Table of Contents
+## Table of Contents</br>
  ### Required fields
 * [eISBN](#eisbn) </br>
 * [Title](#title) </br>
@@ -34,11 +34,9 @@
 </br></br>
 
 ## eISBN 
-```ruby
-Required 
-```
+
 ### Definition</br>
-``Required field``: Your eBook's electronic ISBN. Must be 13 digits in length.
+Your eBook's electronic ISBN. Must be 13 digits in length.
   
 ### Best Practice	</br>
 In ONIX the ISBN must be unhyphenated.
