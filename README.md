@@ -17,7 +17,7 @@
 
 ### Strongly Recommended
 * [Publication Date](#publication-date)</br>
-* [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#)</br>
+* [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * Related Product</br>
 * Series Name/Series Number</br>
 * Audience Age Range - From/Audience Age Range - To</br>
