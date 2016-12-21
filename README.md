@@ -16,7 +16,7 @@
 * [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
-* Publication Date</br>
+* [Publication Date](#publication-date)</br>
 * On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)</br>
 * Related Product</br>
 * Series Name/Series Number</br>
@@ -235,11 +235,9 @@ In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONI
 Price Effective Date (ONIX 2.1) and Price Date Role (ONIX 3.0) composites allow you to schedule promotional prices with your ONIX feed.
 
 ### Best Practice	</br>
-> Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.
-
-> Ensure the promo price has both a start and end date. 
-
-> Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. 
+  > * Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.</br>
+  > * Ensure the promo price has both a start and end date. </br>
+  > * Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. 
 
 ### Correct Usage (example)	</br>
 Example of a sample scheduled price reduction, with embedded comments for clarification:
@@ -320,6 +318,28 @@ Excel: "inactive" instead of "deactivated"
 
 ### Notes</br>
 ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for activations and deactivations. A value of 04 will activate a book. A value of 02 will indicate that the book should be put on preorder. Any other value will quarantine the book. Any titles listed as Forthcoming (02) or Active (04) will be activated. All others will be deactivated, so we encourage you to review and update all of your titles. Please pay special attention to any titles with value 00 (Unspecified).  
+</br></br>
+
+
+## Publication Date	
+### Definition</br>
+Your eBook's publication date is what appears on the title's product page on the Kobo store.
+It is a display value only. 
+
+### Best Practice	</br>
+> Excel: Please use the format: YYYY-MM-DD.
+> If no publication date is included, the default date is set as December 2009.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** |Publication Date: 2010-01-16| `<PublicationDate>20130315</PublicationDate>`</br>|`<PublishingDate>`</br>`<PublishingDateRole>01</PublishingDateRole>`</br>`<Date>20150219</Date>`</br>`</PublishingDate>`</br> 
+**Short Tag**      |N/A|`<b003>20130315</b003>`</br>|`<publishingdate>`</br>`<x448>01</x448>`</br>`<b306>20150219</b306>`</br>`</publishingdate>`</br> 
+### :warning: Common Errors (example)	</br>
+* Excel: 21/11/2013</br>
+* Excel: 2013</br>
+* Excel: 2013/11/21</br>
+
 </br></br>
 --- template --- 
 
