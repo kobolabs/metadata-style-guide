@@ -2,8 +2,8 @@
 
 # Kobo Metadata Style Guide
 
-## Table of Contents</br>
- ### Required fields
+## Table of Contents
+### Required Field
 * [eISBN](#eisbn) </br>
 * [Title](#title) </br>
 * Publisher</br>
