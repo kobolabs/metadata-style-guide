@@ -333,7 +333,7 @@ It is a display value only.
 ### Correct Usage (example)	</br>
                | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** |Publication Date: 2010-01-16| `<PublicationDate>20130315</PublicationDate>`</br>|`<PublishingDate>`</br>`<PublishingDateRole>01</PublishingDateRole>`</br>`<Date>20150219</Date>`</br>`</PublishingDate>`</br> 
+**Reference Name** |<sub>Publication Date: 2010-01-16</sub>| `<PublicationDate>20130315</PublicationDate>`</br>|`<PublishingDate>`</br>`<PublishingDateRole>01</PublishingDateRole>`</br>`<Date>20150219</Date>`</br>`</PublishingDate>`</br> 
 **Short Tag**      |N/A|`<b003>20130315</b003>`</br>|`<publishingdate>`</br>`<x448>01</x448>`</br>`<b306>20150219</b306>`</br>`</publishingdate>`</br> 
 ### :warning: Common Errors (example)	</br>
 * Excel: 21/11/2013</br>
@@ -355,7 +355,7 @@ The On Sale Date is when your title is made active on site. If your book is avai
 ### Correct Usage (example)	</br> 
                | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name**|  OnSale Date: 2010-01-16   | **On Sale Date**</br>`<OnSaleDate>20150219</OnSaleDate>`</br>|**Embargo Date**</br>`<PublishingDate>`</br>`<PublishingDateRole>02</PublishingDateRole>`</br>`<Date>20150219</Date>`</br>`</PublishingDate> `</br>
+**Reference Name**|  <sub>OnSale Date: 2010-01-16</sub>   | **On Sale Date**</br>`<OnSaleDate>20150219</OnSaleDate>`</br>|**Embargo Date**</br>`<PublishingDate>`</br>`<PublishingDateRole>02</PublishingDateRole>`</br>`<Date>20150219</Date>`</br>`</PublishingDate> `</br>
 **Short Tag**|N/A|`<j143>20150219</j143>`</br>|`<publishingdate> `</br>`<x448>02</x448> `</br>`<b306>20150219</b306>`</br>`</publishingdate>`</br> 
 ### :warning: Common Errors (example)	</br>
 * Excel: 21/11/2013</br>
