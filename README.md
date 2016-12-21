@@ -140,12 +140,13 @@ Your publisher name as it should appear on the Kobo store.
 Publisher: Left Shark Editions
 
   * **ONIX 2.1 and 3.0** </br>
-    Reference Name:</br>
+   Reference Name:</br>
 `<Publisher>`</br>
 `<PublishingRole>01</PublishingRole>`</br>
 `<PublisherName>Left Shark Editions</PublisherName>`</br>
 `</Publisher>`</br>
-    Short Tag:
+
+   Short Tag:</br>
 `<publisher> `</br>
 `<b291>01</b291>`</br>
 `<b081>Left Shark Editions</b081>`</br>
@@ -165,7 +166,8 @@ Publisher: Left Shark Editions
   * **ONIX 2.1 and 3.0** </br>
     Reference Name:</br>
     
-    Short Tag:
+    
+    Short Tag:</br>
 </br>
 ### Common Errors (example)	</br>
 ### Character Limits	</br>
