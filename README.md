@@ -31,7 +31,7 @@
 Required 
 ```
 ### Definition</br>
-Your eBook's electronic ISBN. Must be 13 digits in length.
+``Required field``: Your eBook's electronic ISBN. Must be 13 digits in length.
   
 ### Best Practice	</br>
 In ONIX the ISBN must be unhyphenated.
