@@ -201,8 +201,6 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
 > **Price Type Code**
 > Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CA, US), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
 
-> **`<PriceType>`**
-> Codes</br>
 > Prices without tax included (CA and US)</br>
 > 01 – Wholesale prices in Canada and the US, without tax included</br>
 > 41 – Agency prices in Canada and the US, without tax included</br>
