@@ -3,26 +3,33 @@
 # Kobo Metadata Style Guide
 
 ## Table of Contents
-  
-* [eISBN](#eisbn)
-* [Title](#title)
-* Subtitle
-* Publisher
-* Imprint
-* Contributor (Author, Editor, etc.)
-* Publication Date
-* On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)
-* Language
-* Subject Code
-* Sales Rights
-* Price/Price Type Code (ONIX only) 
-* Price Date Role (ONIX only)
-* Related Product
-* Series Name/Series Number 
-* Audience Age Range - From/Audience Age Range - To
-* Publishing Status 
-* Product Availability
-* Master Brand
+ ### Required fields
+* [eISBN](#eisbn) </br>
+* [Title](#title) </br>
+* Publisher</br>
+* Contributor (Author, Editor, etc.)</br>
+* Language</br>
+* Subject Code</br>
+* Sales Rights</br>
+* Price/Price Type Code (ONIX only)</br>
+* Price Date Role (ONIX only)</br>
+* Publishing Status</br>
+
+ ### Strongly Recommended
+* Publication Date</br>
+* On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)</br>
+* Related Product</br>
+* Series Name/Series Number</br>
+* Audience Age Range - From/Audience Age Range - To</br>
+* Product Availability</br>
+* Master Brand</br>
+
+ ### Recommended if applicable
+* Subtitle</br>
+* Imprint</br>
+
+
+
 
 </br></br>
 
