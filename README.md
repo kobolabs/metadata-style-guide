@@ -18,7 +18,7 @@
 ### Strongly Recommended
 * [Publication Date](#publication-date)</br>
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
-* Related Product</br>
+* [Related Product](#related-product)</br>
 * Series Name/Series Number</br>
 * Audience Age Range - From/Audience Age Range - To</br>
 * Product Availability</br>
@@ -363,6 +363,28 @@ The On Sale Date is when your title is made active on site. If your book is avai
 
 ### Notes</br>
 Date on which products are available for purchase by customers. For ONIX Editeur insists this date is provided along with Publication Date to distinguish between the date of publication and date of availability for sale. If the book is made available for preorder before the On Sale Date/Embargo Date, the On Sale Date/Embargo Date ensures the epub file is not delivered to customers until that date.
+</br></br>
+
+## Related Product
+### Definition</br>
+The ISBN of the print version of your book, that partners who sell print books can use to link print product page to ebook product page.  
+
+### Best Practice	</br>
+> In Excel, use column C "Related ISBN". </br>
+> In ONIX, RelationCode 13 equals Epublication based on (print product)</br>
+  > * ProductIDType 15=ISBN-13.</br>
+  > * and ProductForm BA=Book.</br>
+
+> Multiple RelatedProduct could be linked to 1 title, as soon as the corresponding ISBN are different in each RelatedProduct composites.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Related ISBN:9782246731412                             |`<RelatedProduct>`</br>`<RelationCode>13</RelationCode>`</br>`<ProductIdentifier>`</br>`<ProductIDType>15</ProductIDType>`</br>`<IDValue>9782246731412</IDValue>`</br>`</ProductIdentifier>`</br>`<ProductForm>BA</ProductForm>`</br>`</RelatedProduct>`</br> 
+**Short Tag**      |N/A                              |`<relatedproduct>`</br>`<h208>13</h208>`</br>`<productidentifier>`</br>`<b221>15</b221>`</br>`<b244>9783540261698</b244>`</br>`</productidentifier>`</br>`<b012>BA</b012>`</br>`</relatedproduct>`</br>   
+
+### Notes</br>
+While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and nessecary tag for many of our partners who sell physical books.
 </br></br>
 --- template --- 
 
