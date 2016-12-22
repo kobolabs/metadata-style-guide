@@ -19,7 +19,7 @@
 * [Publication Date](#publication-date)</br>
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
-* Series Name/Series Number</br>
+* [Series Name/Series Number](#series-name--series-number)</br>
 * Audience Age Range - From/Audience Age Range - To</br>
 * Product Availability</br>
 * Master Brand</br>
@@ -419,6 +419,41 @@ The ISBN of the print version of your book, that partners who sell print books c
 
 ### Notes</br>
 While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and nessecary tag for many of our partners who sell physical books.
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</subs>
+</br>
+</br>
+## Series Name/Series Number	
+### Definition</br>
+Your eBook's series name as it should appear on the Kobo store and your eBook's number or sequence within a series as it should appear on the Kobo store.
+
+### Best Practice	</br>
+> **Series Name**</br>
+> Please indicate this in the series fields of your metadata, not in the title of the your ebook. For the European book trade, if both Publisher and Bibliographic (Collection editoriale, Code 11) are used in your metadata, we prefer to have the series title in `<CollectionType>10</CollectionType>` and not Bibliographic Collection in that series tag.</br>
+
+> **Series Number**</br>
+  > * Please indicate this as a numerical value, not as text.</br>
+  > * These should always be a numeric value, no text (e.g. 1).</br>
+  > * Novellas, short stories that bridge two parts together: Series number can be set to a decimal, no text (e.g. 1.5, 2.3).</br>
+  > * Collections/Omnibus Editions: Ranges acceptable (e.g. 1-3, 3-6, etc.).Please don't use the words "omnibus" or "collection" in Part metadata information.</br>
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Series: Lord of the Rings</br># in series: 5         | 
+**Short Tag**      | N/A                            |   
+**Character Limits**	|250|250
+ 
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** |<sub>Series: Lord of the Rings</br></br># in series: 5</sub>                               |<sub>`<Series>`</br>`<TitleOfSeries>Lord of the Rings</TitleOfSeries>`</br>`<NumberWithinSeries>Volume 5</NumberWithinSeries>`</br>`</Series>`<sub></br>                            |<sub>`<Collection>`</br>`<CollectionType>10</CollectionType>`</br>`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>02</TitleElementLevel>`</br>`<TitleText>Lord of the Rings </TitleText>`</br>`</TitleElement>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel> `</br>`<PartNumber>1</PartNumber> `</br>`</TitleElement>`</br>`</TitleDetail>`</br>`</Collection>`<sub></br> 
+**Short Tag**      |N/A                             |<sub>`<series>`</br>`<b018>Lord of the Rings</b018>`</br>`<b019>5</b019>`</br>`</series>`<sub></br>                            |<sub>`<collection>`</br>`<x329>10</x329>`</br>`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`</x409>02</x409>`</br>`<b031>Lord of the Rings</b031>`</br>`</titleelement>`</br>`<titleelement>`</br>`<x409>01</x409>`</br>`<x410>5</x410>`</br>`</titleelement>`</br>`</titledetail>`</br>`</collection>`<sub></br> 
+**Character Limits**	|250                   |250                         |250
+### :warning: Common Errors (example)	</br>
+
+### Notes</br>
+ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
+If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.
 </br>
 <sub>:back:[Table of Contents](#table-of-contents)</subs>
 </br>
