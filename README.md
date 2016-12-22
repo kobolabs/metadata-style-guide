@@ -20,7 +20,7 @@
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
 * [Series Name/Series Number](#series-nameseries-number)</br>
-* Audience Age Range - From/Audience Age Range - To</br>
+* [Audience Age Range - From/Audience Age Range - To]()</br>
 * Product Availability</br>
 * Master Brand</br>
 
@@ -448,6 +448,36 @@ Your eBook's series name as it should appear on the Kobo store and your eBook's 
 ### Notes</br>
 ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
 If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</subs>
+</br>
+</br>
+## Audience Age Range - From/Audience Age Range - To	
+### Definition</br>
+**Strongly Recommended for Kids' books**
+The "From" age value for your eBook's audience age range. The "To" age value for your eBook's audience age range.
+
+### Best Practice	</br>
+> If your title has a specific age range,  in this field you can specify the "from" or "to" values for the beginning age or age limit. 
+
+> The "from" field can be left blank if you prefer to simply specify an age limit in the Audience Age Range - To field. Similarly, the "to" field can be left blank if your title has no age limit.
+
+> Please use a numerical value, not text.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Audience Age Range - From: 8 </br>Audience Age Range - To: 12|Please note that although both "to" and "from" ranges are provided in the examples below, you have the option to use either of these values on its own. </br> </br>This example, tell us this title is for Interest Ages 6+</br></br>`<AudienceRange> `</br>`<AudienceRangeQualifier>17</AudienceRangeQualifier> `</br>`<AudienceRangePrecision>03</AudienceRangePrecision> `</br>`<AudienceRangeValue>6</AudienceRangeValue> `</br>`</AudienceRange>`</br> 
+**Short Tag**      |N/A                             | The following composite tells us that this title is for Interest Ages 8-12.</br></br>`<audiencerange> `</br>`<b074>17</b074> `</br>`<b075>03</b075> `</br>`<b076>8</b076> `</br>`<b075>04</b075> `</br>`<b076>12</b076> `</br>`</audiencerange>`</br></br>If you’re sending us Interest Age, Years or Audience Range Qualifier 17 (which is what we’re hoping to get for the kids’ store), then you can actually use just the “From” and “To” audience range precision tags. Here’s an example:</br>`<audiencerange> `</br>`<b074>17</b074> `</br>`<b075>03</b075> `</br>`<b076>8</b076> `</br>`<b075>04</b075> `</br>`<b076>12</b076> `</br>`</audiencerange>`</br> The above translates to ages 8 years old to 12 years old."    
+
+### :warning: Common Errors (example)	</br>
+Incorrect: eight
+
+### Notes</br>
+* We use AgeRangeQualifier = 17 to determine a title's eligibility for the Kids' Store. 
+* When Audience Age Range - To is 18 or greater, the title will not be filtered into our Kid's Store. 
+* Range limit is 0 To 120. 
+
 </br>
 <sub>:back:[Table of Contents](#table-of-contents)</subs>
 </br>
