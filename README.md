@@ -22,7 +22,7 @@
 * [Series Name/Series Number](#series-nameseries-number)</br>
 * [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to)</br>
 * [Product Availability](#product-availability)</br>
-* Master Brand</br>
+* [Master Brand](#master-brand)</br>
 
 ### Recommended if applicable
 * Subtitle</br>
@@ -497,6 +497,30 @@ ONIX 3.0 only.
 Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>` composite: 
 </br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
 ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability = '10' (List 65).
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</subs>
+</br>
+</br>
+## Master Brand	
+### Definition</br>
+Your eBook or its series' main character.
+
+### Best Practice	</br>
+> Please list this as it should be displayed, without commas.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |                             | 
+**Short Tag**      |                             |   
+**Character Limits**	|250|250
+ 
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** | Main Character (brand): Jack Reacher|`<OtherText>`</br>`<TextTypeCode>98</TextTypeCode>`</br>`<Text>Jack Reacher</Text>`</br>`</OtherText> `</br>|`<TitleDetail>`</br>`<TitleType>01<\TitleType>`</br>`<TitleElement> `</br>`<TitleElementLevel>05</TitleElementLevel>`</br>`<TitleText>Jack Reacher</TitleText> `</br>`</TitleElement> `</br>`</TitleDetail>`</br> 
+**Short Tag**      |N/A                             |     N/A                       |`<TitleDetail> `</br>`<b202>01</b202>`</br>`<TitleElement>`</br>`<x409>05</x409>`</br>`<b203>Jack Reacher</b203>`</br>`</TitleElement>`</br>`</TitleDetail>`</br> 
+**Character Limits**	|250                   |250                         |250
+
 </br>
 <sub>:back:[Table of Contents](#table-of-contents)</subs>
 </br>
