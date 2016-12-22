@@ -190,8 +190,8 @@ Your eBook's price.
 The Price Type Code specifies the type of price submitted (e.g. agency, wholesale, IPP).
 
 ### Best Practice	</br>
-> **Price**
-> In **ONIX**, please follow the 2.1 or 3.0 specification.
+> **Price**</br>
+> In **ONIX**, please follow the 2.1 or 3.0 specification.</br>
 > In **Excel** price:</br>
   > * Must not contain commas.</br>
   > * Must be formatted as a number.</br>
