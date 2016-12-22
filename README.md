@@ -25,8 +25,8 @@
 * [Master Brand](#master-brand)</br>
 
 ### Recommended if applicable
-* Subtitle</br>
-* Imprint</br>
+* [Subtitle](#subtitle)</br>
+* [Imprint](#imprint)</br>
 
 
 
@@ -102,9 +102,12 @@ Your publisher name as it should appear on the Kobo store.
 **Reference Name** |Publisher: Left Shark Editions|`<Publisher>`</br>`<PublishingRole>01</PublishingRole>`</br>`<PublisherName>Left Shark Editions</PublisherName>`</br>`</Publisher>`</br>
 **Short Tag**      | N/A                            |`<publisher> `</br>`<b291>01</b291>`</br>`<b081>Left Shark Editions</b081>`</br>`</publisher>`</br>   
 **Character Limits**	|250|250
-
-</br></br>
-
+### Notes</br>
+We read `<PublishingRole>` 01 and 04.
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</subs>
+</br>
+</br>
 ## Contributor (Author, Editor, etc.)
 
 ### Definition</br>
@@ -509,12 +512,6 @@ Your eBook or its series' main character.
 > Please list this as it should be displayed, without commas.
 
 ### Correct Usage (example)	</br>
-               | Excel                       | ONIX 2.1 and 3.0
--------------- | --------------------------- | --------------------------- 
-**Reference Name** |                             | 
-**Short Tag**      |                             |   
-**Character Limits**	|250|250
- 
                | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** | Main Character (brand): Jack Reacher|`<OtherText>`</br>`<TextTypeCode>98</TextTypeCode>`</br>`<Text>Jack Reacher</Text>`</br>`</OtherText> `</br>|`<TitleDetail>`</br>`<TitleType>01<\TitleType>`</br>`<TitleElement> `</br>`<TitleElementLevel>05</TitleElementLevel>`</br>`<TitleText>Jack Reacher</TitleText> `</br>`</TitleElement> `</br>`</TitleDetail>`</br> 
@@ -525,6 +522,48 @@ Your eBook or its series' main character.
 <sub>:back:[Table of Contents](#table-of-contents)</subs>
 </br>
 </br>
+## Subtitle	
+### Definition</br>
+Your eBook's subtitle as it should appear on the Kobo store.
+
+### Best Practice	</br>
+> Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
+> For correct usage of Subtitle within the title composite please see the entry for Title.
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Subtitle: Left Shark's Park Lark                             |`<Subtitle>Left Shark's Park Lark</Subtitle>`</br> 
+**Short Tag**      | N/A                            |`<b029>Left Shark's Park Lark</b029>`</br>   
+**Character Limits**	|250|250
+
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</subs>
+</br>
+</br>
+## Imprint	
+### Definition</br>
+Your imprint name as it should appear on the Kobo store.
+
+### Best Practice	</br>
+> 
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Imprint: Your Imprint| `<Imprint>`</br> `<ImprintName>Imprint Imprint</ImprintName>`</br> `</Imprint>`</br> 
+**Short Tag**      |  N/A                           | `<imprint>`</br> `<b079>Imprint Imprint</b079>`</br> `</imprint>`</br> 
+  
+**Character Limits**	|250|250
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</subs>
+</br>
+</br>
+
+
+
+
+
 --- template --- 
 
 ## Field	
