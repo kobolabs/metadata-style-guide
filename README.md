@@ -19,7 +19,7 @@
 * [Publication Date](#publication-date)</br>
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
-* [Series Name/Series Number](#series-name--series-number)</br>
+* [Series Name/Series Number](#series-nameseries-number)</br>
 * Audience Age Range - From/Audience Age Range - To</br>
 * Product Availability</br>
 * Master Brand</br>
@@ -27,7 +27,6 @@
 ### Recommended if applicable
 * Subtitle</br>
 * Imprint</br>
-
 
 
 
@@ -438,12 +437,7 @@ Your eBook's series name as it should appear on the Kobo store and your eBook's 
   > * Collections/Omnibus Editions: Ranges acceptable (e.g. 1-3, 3-6, etc.).Please don't use the words "omnibus" or "collection" in Part metadata information.</br>
 
 ### Correct Usage (example)	</br>
-               | Excel                       | ONIX 2.1 and 3.0
--------------- | --------------------------- | --------------------------- 
-**Reference Name** |Series: Lord of the Rings</br># in series: 5         | 
-**Short Tag**      | N/A                            |   
-**Character Limits**	|250|250
- 
+
                | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** |<sub>Series: Lord of the Rings</br></br># in series: 5</sub>                               |<sub>`<Series>`</br>`<TitleOfSeries>Lord of the Rings</TitleOfSeries>`</br>`<NumberWithinSeries>Volume 5</NumberWithinSeries>`</br>`</Series>`<sub></br>                            |<sub>`<Collection>`</br>`<CollectionType>10</CollectionType>`</br>`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>02</TitleElementLevel>`</br>`<TitleText>Lord of the Rings </TitleText>`</br>`</TitleElement>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel> `</br>`<PartNumber>1</PartNumber> `</br>`</TitleElement>`</br>`</TitleDetail>`</br>`</Collection>`<sub></br> 
