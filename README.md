@@ -561,36 +561,3 @@ Your imprint name as it should appear on the Kobo store.
 </br>
 </br>
 
-
-
-
-
---- template --- 
-
-## Field	
-### Definition</br>
-
-
-### Best Practice	</br>
-> 
-
-### Correct Usage (example)	</br>
-               | Excel                       | ONIX 2.1 and 3.0
--------------- | --------------------------- | --------------------------- 
-**Reference Name** |                             | 
-**Short Tag**      |                             |   
-**Character Limits**	|250|250
- 
-               | Excel                       | ONIX 2.1                   | ONIX 3.0
--------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** |                             |                            | 
-**Short Tag**      |                             |                            | 
-**Character Limits**	|250                   |250                         |250
-### :warning: Common Errors (example)	</br>
-
-### Notes</br>
-</br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
-</br>
-</br>
---- template --- 
