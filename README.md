@@ -494,11 +494,13 @@ Indicates if a product is available. `<ProductAvailability>` should carry a date
 
 ### Correct Usage (example)	</br>
 ONIX 3.0 only.
+`<ProductAvailability datestamp="20110517">10</ProductAvailability>`</br>
+
+
+### :warning: Important	</br>
 * `<ProductAvailbility>` code 99 = "Contact supplier - Availability not known to sender." is rejected by our system.</br>
 * `<MarketPublishingStatus>` code 00 = "Unspecified" - "Status is not specified (as distinct from unknown): the default if the `<MarketPublishingStatus>` element is not sent" is rejected by our system.</br>
 
-### :warning: Important	</br>
-The code 99 is rejecte
 ### Notes</br>
 Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>` composite: 
 </br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
