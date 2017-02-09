@@ -447,7 +447,6 @@ Your eBook's series name as it should appear on the Kobo store and your eBook's 
 **Reference Name** |<sub>Series: Lord of the Rings</br></br># in series: 5</sub>                               |<sub>`<Series>`</br>`<TitleOfSeries>Lord of the Rings</TitleOfSeries>`</br>`<NumberWithinSeries>Volume 5</NumberWithinSeries>`</br>`</Series>`<sub></br>                            |<sub>`<Collection>`</br>`<CollectionType>10</CollectionType>`</br>`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>02</TitleElementLevel>`</br>`<TitleText>Lord of the Rings </TitleText>`</br>`</TitleElement>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel> `</br>`<PartNumber>1</PartNumber> `</br>`</TitleElement>`</br>`</TitleDetail>`</br>`</Collection>`<sub></br> 
 **Short Tag**      |N/A                             |<sub>`<series>`</br>`<b018>Lord of the Rings</b018>`</br>`<b019>5</b019>`</br>`</series>`<sub></br>                            |<sub>`<collection>`</br>`<x329>10</x329>`</br>`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`</x409>02</x409>`</br>`<b031>Lord of the Rings</b031>`</br>`</titleelement>`</br>`<titleelement>`</br>`<x409>01</x409>`</br>`<x410>5</x410>`</br>`</titleelement>`</br>`</titledetail>`</br>`</collection>`<sub></br> 
 **Character Limits**	|250                   |250                         |250
-### :warning: Common Errors (example)	</br>
 
 ### Notes</br>
 ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
