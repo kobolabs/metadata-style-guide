@@ -65,7 +65,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 15 - ISBN-13</br>
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</sub>
+:back:[Table of Contents](#table-of-contents)
 </br>
 </br>
 
