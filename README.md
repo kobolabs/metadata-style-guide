@@ -65,7 +65,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 15 - ISBN-13</br>
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -88,7 +88,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 Incorrect: Fellowship of the Ring, The
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Publisher	
@@ -105,7 +105,7 @@ Your publisher name as it should appear on the Kobo store.
 ### Notes</br>
 We read `<PublishingRole>` 01 and 04.
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Contributor (Author, Editor, etc.)
@@ -131,7 +131,7 @@ Incorrect: Shubert, David
 Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Language	
@@ -151,7 +151,7 @@ Excel: BRL, English, Eng
 ### Notes</br>
 Please note that currently we don't support multiple language codes for a single title. Please choose one specific language code for the text and include information about the bilingual nature of the text in the description. We suggest selecting the language code for the audience the title most widely serves. 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Subject Code	
@@ -173,7 +173,7 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
 We do not currently accept Thema codes. 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Sales Rights	
@@ -200,7 +200,7 @@ Excel: Australia
 ### Notes</br>
 Kobo only supports 3 types of `<SalesRightsType>` (`<b089>`) values: 01 - for sale (exclusive rights) 02 - for sale (non-exclusive rights) 03 - not for sale
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -251,7 +251,7 @@ MXN prices must also be listed as whole numbers with zero decimal values. For MX
 
 In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONIX, the Unpriced Item Type code is accepted for free titles when used correctly.
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Price Effective Date & Price Date Role (ONIX only)	
@@ -324,7 +324,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `</Price>`</br>
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -346,7 +346,7 @@ Excel: "inactive" instead of "deactivated"
 ### Notes</br>
 ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for activations and deactivations. A value of 04 will activate a book. A value of 02 will indicate that the book should be put on preorder. Any other value will quarantine the book. Any titles listed as Forthcoming (02) or Active (04) will be activated. All others will be deactivated, so we encourage you to review and update all of your titles. Please pay special attention to any titles with value 00 (Unspecified).  
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -370,7 +370,7 @@ It is a display value only.
 * Excel: 2013</br>
 * Excel: 2013/11/21</br>
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -397,7 +397,7 @@ The On Sale Date is when your title is made active on site. If your book is avai
 ### Notes</br>
 Date on which products are available for purchase by customers. For ONIX Editeur insists this date is provided along with Publication Date to distinguish between the date of publication and date of availability for sale. If the book is made available for preorder before the On Sale Date/Embargo Date, the On Sale Date/Embargo Date ensures the epub file is not delivered to customers until that date.
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -422,7 +422,7 @@ The ISBN of the print version of your book, that partners who sell print books c
 ### Notes</br>
 While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and nessecary tag for many of our partners who sell physical books.
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Series Name/Series Number	
@@ -452,7 +452,7 @@ Your eBook's series name as it should appear on the Kobo store and your eBook's 
 ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
 If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Audience Age Range - From/Audience Age Range - To	
@@ -482,7 +482,7 @@ Incorrect: eight
 * Range limit is 0 To 120. 
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Product Availability	
@@ -506,7 +506,7 @@ Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>`
 </br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
 ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability = '10' (List 65).
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Master Brand	
@@ -524,7 +524,7 @@ Your eBook or its series' main character.
 **Character Limits**	|250                   |250                         |250
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Subtitle	
@@ -543,7 +543,7 @@ Your eBook's subtitle as it should appear on the Kobo store.
 **Character Limits**	|250|250
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 ## Imprint	
@@ -561,7 +561,7 @@ Your imprint name as it should appear on the Kobo store.
   
 **Character Limits**	|250|250
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -594,7 +594,7 @@ Your imprint name as it should appear on the Kobo store.
 
 ### Notes</br>
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</subs>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 --- template --- 
