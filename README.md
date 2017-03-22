@@ -64,10 +64,9 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 13 - LCCN </br>
 15 - ISBN-13</br>
 
-</br>
-:back:[Table of Contents](#table-of-contents)
-</br>
-</br>
+
+:back: [Table of Contents](#table-of-contents)
+
 
 ## Title
 
