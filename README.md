@@ -91,6 +91,7 @@ Incorrect: Fellowship of the Ring, The
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Publisher	
 
 ### Definition</br>
@@ -108,6 +109,7 @@ We read `<PublishingRole>` 01 and 04.
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Contributor (Author, Editor, etc.)
 
 ### Definition</br>
@@ -134,6 +136,7 @@ Excel: This is where you can list the names of your eBook's contributors. If you
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Language	
 ### Definition</br>
 Excel: The language code that indicates the language in which your eBook is written (two characters).
@@ -154,6 +157,7 @@ Please note that currently we don't support multiple language codes for a single
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Subject Code	
 ### Definition</br>
 A subject category code from the scheme identified (BISAC, BIC, etc), which will help catalogue ebooks.
@@ -177,6 +181,7 @@ We do not currently accept Thema codes.
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Sales Rights	
 ### Definition</br>
 Your eBook's sales rights.
@@ -255,6 +260,7 @@ In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONI
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Price Effective Date & Price Date Role (ONIX only)	
 ### Definition</br>
 Price Effective Date (ONIX 2.1) and Price Date Role (ONIX 3.0) composites allow you to schedule promotional prices with your ONIX feed.
@@ -426,6 +432,7 @@ While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a use
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Series Name/Series Number	
 ### Definition</br>
 Your eBook's series name as it should appear on the Kobo store and your eBook's number or sequence within a series as it should appear on the Kobo store.
@@ -455,6 +462,7 @@ If you want to add both collection types (Publisher and Collection Editoriale), 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Audience Age Range - From/Audience Age Range - To	
 ### Definition</br>
 **Strongly Recommended for Kids' books**
@@ -485,6 +493,7 @@ Incorrect: eight
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Product Availability	
 ### Definition</br>
 Indicates if a product is available. `<ProductAvailability>` should carry a datestamp attribute to indicate how current the data is.
@@ -504,6 +513,7 @@ ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Master Brand	
 ### Definition</br>
 Your eBook or its series' main character.
@@ -522,6 +532,7 @@ Your eBook or its series' main character.
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Subtitle	
 ### Definition</br>
 Your eBook's subtitle as it should appear on the Kobo store.
@@ -541,6 +552,7 @@ Your eBook's subtitle as it should appear on the Kobo store.
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 ## Imprint	
 ### Definition</br>
 Your imprint name as it should appear on the Kobo store.
