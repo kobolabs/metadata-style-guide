@@ -174,6 +174,7 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 **Short Tag**      |N/A                             |BISAC</br>`<b064> JNF001100</b064>`</br>`<subject>`</br>`<b067>10</b067>`</br>`<b069> JNF028000</b069>`</br>`<subject>`</br>BIC</br>`<b065>YNU</b065>`</br>                            |`<subject>`</br>`<x425/>`</br>`<b067>10</b067>`</br>`<b069> JNF001000</b069>`</br>`</subject>`</br>`<subject>`</br>`<b067>10</b067>`</br> 
 <sub>Scroll right to see entire table ->></sub>
 </br> 
+
 ### Notes</br>
 Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
 We do not currently accept Thema codes. 
