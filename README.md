@@ -86,8 +86,8 @@ Info               | Excel                                   | ONIX 2.1         
 ### :warning: Common Errors (example)	</br>
 Incorrect: Fellowship of the Ring, The
 
-</br>
-:back:[Table of Contents](#table-of-contents)
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
 
@@ -104,9 +104,12 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Character Limits**	|250|250
 ### Notes</br>
 We read `<PublishingRole>` 01 and 04.
+ 
+
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
-:back:[Table of Contents](#table-of-contents)
-</br>
+
 
 ## Contributor (Author, Editor, etc.)
 
@@ -130,7 +133,7 @@ Incorrect: Shubert, David
 ### Notes</br>
 Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
 
-</br>
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -151,7 +154,8 @@ Excel: BRL, English, Eng
 
 ### Notes</br>
 Please note that currently we don't support multiple language codes for a single title. Please choose one specific language code for the text and include information about the bilingual nature of the text in the description. We suggest selecting the language code for the audience the title most widely serves. 
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -176,7 +180,8 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 ### Notes</br>
 Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
 We do not currently accept Thema codes. 
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -204,7 +209,7 @@ Excel: Australia
 
 ### Notes</br>
 Kobo only supports 3 types of `<SalesRightsType>` (`<b089>`) values: 01 - for sale (exclusive rights) 02 - for sale (non-exclusive rights) 03 - not for sale
-</br>
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -256,7 +261,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 MXN prices must also be listed as whole numbers with zero decimal values. For MXN pricing, if decimals are provided, the prices will be rounded up or down (e.g. 249.25 MXN will be rounded to 249 MXN, while 249.75 MXN will be rounded to 250 MXN). 
 
 In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONIX, the Unpriced Item Type code is accepted for free titles when used correctly.
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -330,7 +336,8 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<Date>20151231</Date> </PriceDate>`</br>
 `</Price>`</br>
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -352,7 +359,8 @@ Excel: "inactive" instead of "deactivated"
 
 ### Notes</br>
 ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for activations and deactivations. A value of 04 will activate a book. A value of 02 will indicate that the book should be put on preorder. Any other value will quarantine the book. Any titles listed as Forthcoming (02) or Active (04) will be activated. All others will be deactivated, so we encourage you to review and update all of your titles. Please pay special attention to any titles with value 00 (Unspecified).  
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -376,7 +384,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 * Excel: 21/11/2013</br>
 * Excel: 2013</br>
 * Excel: 2013/11/21</br>
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -403,7 +412,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 ### Notes</br>
 Date on which products are available for purchase by customers. For ONIX Editeur insists this date is provided along with Publication Date to distinguish between the date of publication and date of availability for sale. If the book is made available for preorder before the On Sale Date/Embargo Date, the On Sale Date/Embargo Date ensures the epub file is not delivered to customers until that date.
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -428,7 +438,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 
 ### Notes</br>
 While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and nessecary tag for many of our partners who sell physical books.
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -458,7 +469,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 ### Notes</br>
 ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
 If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -489,7 +501,8 @@ Incorrect: eight
 * When Audience Age Range - To is 18 or greater, the title will not be filtered into our Kid's Store. 
 * Range limit is 0 To 120. 
 
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -509,7 +522,8 @@ ONIX 3.0 only.
 Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>` composite: 
 </br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
 ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability = '10' (List 65).
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -528,7 +542,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 **Short Tag**      |N/A                             |     N/A                       |`<TitleDetail> `</br>`<b202>01</b202>`</br>`<TitleElement>`</br>`<x409>05</x409>`</br>`<b203>Jack Reacher</b203>`</br>`</TitleElement>`</br>`</TitleDetail>`</br> 
 **Character Limits**	|250                   |250                         |250
 
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -548,7 +563,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      | N/A                            |`<b029>Left Shark's Park Lark</b029>`</br>   
 **Character Limits**	|250|250
 
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
@@ -567,7 +583,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      |  N/A                           | `<imprint>`</br> `<b079>Imprint Imprint</b079>`</br> `</imprint>`</br> 
   
 **Character Limits**	|250|250
-</br>
+
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
