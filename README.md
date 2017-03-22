@@ -88,7 +88,7 @@ Info               | Excel                                   | ONIX 2.1         
 Incorrect: Fellowship of the Ring, The
 
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</sub>
+:back:[Table of Contents](#table-of-contents)
 </br>
 </br>
 
@@ -106,8 +106,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 ### Notes</br>
 We read `<PublishingRole>` 01 and 04.
 </br>
-<sub>:back:[Table of Contents](#table-of-contents)</sub>
-</br>
+:back:[Table of Contents](#table-of-contents)
 </br>
 
 ## Contributor (Author, Editor, etc.)
@@ -234,6 +233,7 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
 > 41 – Agency prices in Canada and the US, without tax included</br>
 > 03 – IPP prices in Canada and the US, without tax included</br>
 </br>
+
 > Prices with tax included (EU, UK, and AU)</br>
 > 02 – Wholesale prices in the EU, UK, and AU, with tax included</br>
 > 42 – Agency prices in the EU, UK, and AU, with tax included</br>
