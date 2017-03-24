@@ -13,6 +13,7 @@
 * [Sales Rights](#sales-rights)</br>
 * [Price/Price Type Code (ONIX only)](#priceprice-type-code-onix-only)</br>
 * [Price Effective Date & Price Date Role (ONIX only)](#price-effective-date--price-date-role-onix-only)</br>
+* [Taxes and Prices](#taxes-and-prices)</br>
 * [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
@@ -131,7 +132,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Incorrect: Shubert, David
 
 ### Notes</br>
-Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
+Excel: This is where you can list the names of your eBook's contributors. If the contributors are the same type (i.e. more than one author, or editor, etc), you can put them in the same cell separated by a comma.
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
@@ -342,6 +343,33 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 </br>
 </br>
 
+## Taxes and Prices	
+### Definition</br>
+
+
+### Best Practice	</br>
+> 
+
+### Correct Usage (example)	</br>
+               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |                             | 
+**Short Tag**      |                             |   
+**Character Limits**	|250|250
+ 
+               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** |                             |                            | 
+**Short Tag**      |                             |                            | 
+**Character Limits**	|250                   |250                         |250
+### :warning: Common Errors (example)	</br>
+
+### Notes</br>
+</br>
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
 ## Publishing Status	
 ### Definition</br>
 Your eBook's publishing status.
@@ -437,7 +465,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      |N/A                              |`<relatedproduct>`</br>`<h208>13</h208>`</br>`<productidentifier>`</br>`<b221>15</b221>`</br>`<b244>9783540261698</b244>`</br>`</productidentifier>`</br>`<b012>BA</b012>`</br>`</relatedproduct>`</br>   
 
 ### Notes</br>
-While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and nessecary tag for many of our partners who sell physical books.
+While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and necessary tag for many of our partners who sell physical books.
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
