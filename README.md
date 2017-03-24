@@ -21,6 +21,7 @@
 * [Related Product](#related-product)</br>
 * [Series Name/Series Number](#series-nameseries-number)</br>
 * [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to)</br>
+* [Product Availability](#product-availability)</br>
 * [Master Brand](#master-brand)</br>
 
 ### Recommended if applicable
@@ -130,7 +131,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Incorrect: Shubert, David
 
 ### Notes</br>
-Excel: This is where you can list the names of your eBook's contributors. If your title has multiple names for the same contributor type, you can list them within a single cell with each name separated by a comma.
+Excel: This is where you can list the names of your eBook's contributors. If the contributors are the same type (i.e. more than one author, or editor, etc), you can put them in the same cell separated by a comma.
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
@@ -231,16 +232,16 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
 > **Price Type Code**
 > Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CA, US), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
 
-> Prices without tax included (CA and US)</br>
-> 01 – Wholesale prices in Canada and the US, without tax included</br>
-> 41 – Agency prices in Canada and the US, without tax included</br>
-> 03 – IPP prices in Canada and the US, without tax included</br>
+> Prices without tax included (CA, US and BRL)</br>
+> 01 – Wholesale prices in CA, US and BRL, without tax included</br>
+> 41 – Agency prices in CA, US and BRL, without tax included</br>
+> 03 – IPP prices in CA, US and BRL, without tax included</br>
 </br>
 
-> Prices with tax included (EU, UK, and AU)</br>
-> 02 – Wholesale prices in the EU, UK, and AU, with tax included</br>
-> 42 – Agency prices in the EU, UK, and AU, with tax included</br>
-> 04 – IPP prices in the EU, UK, and AU, with tax included" </br>
+> Prices with tax included (EUR, GBP, AUD, NZD, ZAR, JPY and MXN)</br>
+> 02 – Wholesale prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
+> 42 – Agency prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
+> 04 – IPP prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included" </br>
 
 ### Correct Usage (example)	</br>
  
@@ -436,7 +437,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      |N/A                              |`<relatedproduct>`</br>`<h208>13</h208>`</br>`<productidentifier>`</br>`<b221>15</b221>`</br>`<b244>9783540261698</b244>`</br>`</productidentifier>`</br>`<b012>BA</b012>`</br>`</relatedproduct>`</br>   
 
 ### Notes</br>
-While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and nessecary tag for many of our partners who sell physical books.
+While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and necessary tag for many of our partners who sell physical books.
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
@@ -506,7 +507,26 @@ Incorrect: eight
 </br>
 </br>
 
+## Product Availability	
+### Definition</br>
+Indicates if a product is available. `<ProductAvailability>` should carry a datestamp attribute to indicate how current the data is.
 
+### Best Practice	</br>
+> This field is mandatory when the `<SupplyDetail>` composite is used.
+
+### Correct Usage (example)	</br>
+ONIX 3.0 only.
+`<ProductAvailability datestamp="20110517">10</ProductAvailability>`</br>
+
+### Notes</br>
+Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>` composite: 
+</br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
+ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability = '10' (List 65).
+
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
 
 ## Master Brand	
 ### Definition</br>
@@ -568,4 +588,3 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
-
