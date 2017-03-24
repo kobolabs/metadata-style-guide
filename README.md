@@ -21,7 +21,6 @@
 * [Related Product](#related-product)</br>
 * [Series Name/Series Number](#series-nameseries-number)</br>
 * [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to)</br>
-* [Product Availability](#product-availability)</br>
 * [Master Brand](#master-brand)</br>
 
 ### Recommended if applicable
@@ -507,26 +506,7 @@ Incorrect: eight
 </br>
 </br>
 
-## Product Availability	
-### Definition</br>
-Indicates if a product is available. `<ProductAvailability>` should carry a datestamp attribute to indicate how current the data is.
 
-### Best Practice	</br>
-> This field is mandatory when the `<SupplyDetail>` composite is used.
-
-### Correct Usage (example)	</br>
-ONIX 3.0 only.
-`<ProductAvailability datestamp="20110517">10</ProductAvailability>`</br>
-
-### Notes</br>
-Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>` composite: 
-</br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
-ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability = '10' (List 65).
-
-
-<sub>:back:[Table of Contents](#table-of-contents)</sub>
-</br>
-</br>
 
 ## Master Brand	
 ### Definition</br>
