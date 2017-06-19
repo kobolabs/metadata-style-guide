@@ -232,15 +232,15 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
   > * Currency must be in upper-case format.</br>
   
 > **Price Type Code**
-> Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CA, US), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
+> Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CAD, USD, INR, JPY, MXN, PHP and BRL), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
 
-> Prices without tax included (CA, US and BRL)</br>
+> Prices without tax included (CAD, USD, INR, JPY, MXN, PHP and BRL)</br>
 > 01 – Wholesale prices in CA, US and BRL, without tax included</br>
 > 41 – Agency prices in CA, US and BRL, without tax included</br>
 > 03 – IPP prices in CA, US and BRL, without tax included</br>
 </br>
 
-> Prices with tax included (EUR, GBP, AUD, NZD, ZAR, JPY and MXN)</br>
+> Prices with tax included (EUR, GBP, AUD, NZD and ZAR)</br>
 > 02 – Wholesale prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
 > 42 – Agency prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
 > 04 – IPP prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included" </br>
