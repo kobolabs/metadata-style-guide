@@ -182,6 +182,8 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 ### Notes</br>
 Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
 We do not currently accept Thema codes. 
+Kobo only supports BISAC, BIC, CULTURA, and CLIL categories codes. (Please note that the
+CLIL codes are accepted but mapped to BISAC via our system).</br>
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
