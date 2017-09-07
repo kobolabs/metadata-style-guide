@@ -471,9 +471,11 @@ Info               | Excel                       | ONIX 2.1                   | 
 **Character Limits**	|250                   |250                         |250
 
 ### Notes</br>
-ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
+* ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
 If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.</br>
-Kobo supports only 1 serie information.
+* In order the PartNumber is fully interpreted by our system, we need it to be added in the first `</titleelement>` composite, along with the title of the serie. 
+* Kobo supports only 1 serie information.
+
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
