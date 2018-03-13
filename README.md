@@ -455,7 +455,7 @@ Your eBook's series name as it should appear on the Kobo store and your eBook's 
 
 ### Best Practice	</br>
 > **Series Name**</br>
-> Please indicate this in the series fields of your metadata, not in the title of the your ebook. For the European book trade, if both Publisher and Bibliographic (Collection editoriale, Code 11) are used in your metadata, we prefer to have the series title in `<CollectionType>10</CollectionType>` and not Bibliographic Collection in that series tag.</br>
+> Please indicate this in the series fields of your metadata, not in the title of the your ebook. For the European book trade, if both Series and Publisher Collection (Collection éditoriale, code 11) are used in your metadata, please make sure to use the appropriate code (code 10 for Series, code 11 for Collection éditoriale)</br>
 
 > **Series Number**</br>
   > * Please indicate this as a numerical value, not as text.</br>
@@ -467,21 +467,22 @@ Your eBook's series name as it should appear on the Kobo store and your eBook's 
 
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** |Series: Lord of the Rings</br></br># in series: 5                               |`<Series>`</br>`<TitleOfSeries>Lord of the Rings</TitleOfSeries>`</br>`<NumberWithinSeries>Volume 5</NumberWithinSeries>`</br>`</Series>`</br>                            |`<Collection>`</br>`<CollectionType>10</CollectionType>`</br>`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>02</TitleElementLevel>`</br>`<TitleText>Lord of the Rings</TitleText>`</br>`<PartNumber>5</PartNumber> `</br>`</TitleElement>`</br>`</TitleDetail>`</br>`</Collection>`</br>  
-**Short Tag**      |N/A                             |`<series>`</br>`<b018>Lord of the Rings</b018>`</br>`<b019>5</b019>`</br>`</series>`</br>                            |`<collection>`</br>`<x329>10</x329>`</br>`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`</x409>02</x409>`</br>`<b203>Lord of the Rings</b203>`</br>`<x410>5</x410>`</br>`</titleelement>`</br>`</titledetail>`</br>`</collection>`</br>
+**Reference Name** |Series: Lord of the Rings</br></br># in series: 5                               |`<Series>`</br>`<TitleOfSeries>Lord of the Rings</TitleOfSeries>`</br>`<NumberWithinSeries>Volume 5</NumberWithinSeries>`</br>`</Series>`</br>                            |`<Collection>`</br>`<CollectionType>10</CollectionType>`</br>`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>02</TitleElementLevel>`</br>`<TitleText>Lord of the Rings</TitleText>`</br>`</TitleElement>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel>`</br>`<PartNumber>5</PartNumber>`</br>`</TitleElement>`</br>`</TitleDetail>`</br>`</Collection>`</br>  
+**Short Tag**      |N/A                             |`<series>`</br>`<b018>Lord of the Rings</b018>`</br>`<b019>5</b019>`</br>`</series>`</br>                            |`<collection>`</br>`<x329>10</x329>`</br>`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`</x409>02</x409>`</br>`<b203>Lord of the Rings</b203>`</br>`</titleelement>`</br>`<titleelement>`</br>`</x409>01</x409>`</br>`<x410>5</x410>`</br>`</titleelement>`</br>`</titledetail>`</br>`</collection>`</br>
+
 **Character Limits**	|250                   |250                         |250
 
 ### Notes</br>
 * ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
 If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.</br>
-* In order the PartNumber is fully interpreted by our system, we need it to be added in the first `</titleelement>` composite, along with the title of the serie. 
-* Kobo supports only 1 serie information.
+* Kobo supports only 1 series information.
 
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
+
 
 ## Audience Age Range - From/Audience Age Range - To	
 ### Definition</br>
