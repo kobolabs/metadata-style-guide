@@ -1,6 +1,6 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/Testing/banner-MSG3.png)
 
-*Last update: March 2017*
+*Last update: March 2018*
 
 # Kobo Metadata Style Guide
 
@@ -575,6 +575,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      | N/A                            |`<b029>Left Shark's Park Lark</b029>`</br>   
 **Character Limits**	|250|250
 
+### Notes</br>
+Book titles, subtitles, series titles or author fields that include extraneous words that are not actually part of the official title, subtitle, series title or author name are not acceptable and lead to confusion and the corruption of metadata standards. We respectfully request that you ensure your catalog of titles does not include such details so that the overall Kobo catalog can offer the purest experience for our customers around the world.
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
