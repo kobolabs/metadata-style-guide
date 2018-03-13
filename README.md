@@ -58,7 +58,7 @@ ONIX: `ProductIDType` 03 is mandatory as it represents how your books will be id
 
 Multiple Product Identifers are allowed per title. We parse `ProductIDs` of product types in this order: ‘03’, ‘15’, ‘02’, ‘01.’ Please note we will only use type ‘02’ in cases where neither type ‘03’, nor type ‘15’ is provided. 
 
-When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 should be labelled distinctively.   
+When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 should be a distinctive ISBN.   
 </br>
 02 - ISBN-10 </br>
 03 - EAN-13 (GTIN-13) </br>
