@@ -73,7 +73,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 ## Title
 
 ### Definition</br>
- Your eBook's title as it should appear on the Kobo store.
+ Your eBook's title as it should appear on the product page.
  
 ### Best Practice	</br>
 > Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
@@ -82,7 +82,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 Info               | Excel                                   | ONIX 2.1                                | ONIX 3.0
 -------------- | --------------------------------------- | --------------------------------------- |---------------------------------------
 **Reference Name** |Title: The Shark in the Park| `<Title>`</br>`<TitleType>01</TitleType>`</br>`<TitleText>The Shark In The Park</TitleText>`</br>`</Title>`</br> |`<TitleDetail>`</br>`<TitleType>01</TitleType>`</br>`<TitleElement>`</br>`<TitleElementLevel>01</TitleElementLevel>`</br>`<TitlePrefix>The</TitlePrefix>`</br>`<TitleWithoutPrefix>Shark In The Park</TitleWithoutPrefix>`</br>`<Subtitle>Left Shark's Park Lark</Subtitle>`</br>`</TitleElement>`</br>`</TitleDetail>`</br>
-**Short Tag**      | N/A|N/A|`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`<x409>01</x409>`</br>`<b030>The</b030>`</br>`<b031>Shark In The Park</b031>`</br>`<b029>Left Shark’s Park Lark</b029>`</br>`</titleelement>`</br>`</titledetail>`</br>      
+**Short Tag**      | N/A|`<title>`</br>`<b202>01</b202>`</br>`<b203>Shark In The Park</b203>`</br>`</title>`</br>|`<titledetail>`</br>`<b202>01</b202>`</br>`<titleelement>`</br>`<x409>01</x409>`</br>`<b030>The</b030>`</br>`<b031>Shark In The Park</b031>`</br>`<b029>Left Shark’s Park Lark</b029>`</br>`</titleelement>`</br>`</titledetail>`</br>      
 **Character Limits**	|250|250|250
 
 ### :warning: Common Errors (example)	</br>
