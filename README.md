@@ -34,7 +34,7 @@
 
 </br></br>
 
-## eISBN 
+## ISBN 
 
 ### Definition</br>
 Your eBook's electronic ISBN. Must be 13 digits in length.
@@ -45,8 +45,8 @@ Your eBook's electronic ISBN. Must be 13 digits in length.
 ### Correct Usage (example)	</br>
 Info | Excel                                   | ONIX 2.1 and 3.0
 -------------- | --------------------------------------- | --------------------------------------- 
-**Reference Name** |eBook ISBN: 9780007322596| `<ProductIdentifier>`</br>`<ProductIDType>03</ProductIDType>`</br>`<IDValue>9780826110077</IDValue>`</br>`</ProductIdentifier>`</br>`<productidentifier>`</br>   
-**Short Tag**      | N/A                                     | `<b221>03</b221>`</br>`<b244>9780826110077</b244>`</br>`</productidentifier>` </br>       
+**Reference Name** |eBook ISBN: 9780007322596| `<ProductIdentifier>`</br>`<ProductIDType>15</ProductIDType>`</br>`<IDValue>9780826110077</IDValue>`</br>`</ProductIdentifier>`</br>`<productidentifier>`</br>   
+**Short Tag**      | N/A                                     | `<ProductIdentifier>`</br>`<b221>03</b221>`</br>`<b244>9780826110077</b244>`</br>`</productidentifier>` </br>       
 **Character Limits**	|13 digits|13 digits
     
 ### :warning: Common Errors (example)	</br>
