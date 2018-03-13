@@ -6,7 +6,7 @@
 
 ## Table of Contents
 ### Required Field
-* [eISBN](#eisbn) </br>
+* [ISBN](#isbn) </br>
 * [Title](#title) </br>
 * [Publisher](#publisher)</br>
 * [Contributor (Author, Editor, etc.)](#contributor-author-editor-etc)</br>
