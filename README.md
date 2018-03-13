@@ -88,6 +88,8 @@ Info               | Excel                                   | ONIX 2.1         
 ### :warning: Common Errors (example)	</br>
 Incorrect: Fellowship of the Ring, The
 
+### Notes</br>
+Book titles, subtitles, series titles or author fields that include extraneous words that are not actually part of the official title, subtitle, series title or author name are not acceptable and lead to confusion and the corruption of metadata standards. We respectfully request that you ensure your catalog of titles does not include such details so that the overall Kobo catalog can offer the purest experience for our customers around the world.
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
