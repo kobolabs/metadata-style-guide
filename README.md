@@ -551,8 +551,7 @@ Your eBook or its series' master brand. Used only for branded media properties c
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** | Main Character (brand): Sesame Street|`<OtherText>`</br>`<TextTypeCode>98</TextTypeCode>`</br>`<Text>Sesame Street</Text>`</br>`</OtherText> `</br>|`<TitleDetail>`</br>`<TitleType>01<\TitleType>`</br>`<TitleElement> `</br>`<TitleElementLevel>05</TitleElementLevel>`</br>`<TitleText>Sesame Street</TitleText> `</br>`</TitleElement> `</br>`</TitleDetail>`</br> 
-**Short Tag**      |N/A                             |`<othertext>`</br>`<b102>98</b102>`</br>`<d104>Sesame Street</d104>`</br>`</othertext>`</br>
-|`<TitleDetail> `</br>`<b202>01</b202>`</br>`<TitleElement>`</br>`<x409>05</x409>`</br>`<b203>Sesame Street</b203>`</br>`</TitleElement>`</br>`</TitleDetail>`</br> 
+**Short Tag**      |N/A                             |`<othertext>`</br>`<b102>98</b102>`</br>`<d104>Sesame Street</d104>`</br>`</othertext>`</br>|`<TitleDetail> `</br>`<b202>01</b202>`</br>`<TitleElement>`</br>`<x409>05</x409>`</br>`<b203>Sesame Street</b203>`</br>`</TitleElement>`</br>`</TitleDetail>`</br> 
 **Character Limits**	|250                   |250                         |250
 
 
