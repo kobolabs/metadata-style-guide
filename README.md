@@ -531,7 +531,7 @@ ONIX 3.0 only.
 
 ### Notes</br>
 Kobo reads ProductAvailability in Onix 3. </br>Mandatory in the `<SupplyDetail>` composite: 
-</br>Code List: http://www.bic-media.com/dmrn/codelists/onix-codelist-65.htm </br>
+</br>Code List: https://ns.editeur.org/onix/en/65 </br>
 ONIX 3: SupplyDate with SupplyDateRole = '08' required when ProductAvailability = '10' (List 65).
 
 
