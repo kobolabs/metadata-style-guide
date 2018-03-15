@@ -123,7 +123,7 @@ The author and/or editor name(s)
 ### Best Practice	</br>
 > Please use the format: First Name + Last Name for this field. No commas or name order reversal.
 >
-> ONIX: If your title does not have a contributor, you can now use the field <NoContributor/> or <n339/> in your ONIX. We will instead list the imprint or publisher name as the byline.
+> ONIX: If your title does not have a contributor, you can now use the field `<NoContributor/>` or `<n339/>` in your ONIX. We will instead list the imprint or publisher name as the byline.
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
