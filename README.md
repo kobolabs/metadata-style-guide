@@ -91,6 +91,8 @@ Incorrect: Fellowship of the Ring, The
 ### Notes</br>
 Book titles, subtitles, series titles or author fields that include extraneous words that are not actually part of the official title, subtitle, series title or author name are not acceptable and lead to confusion and the corruption of metadata standards. We respectfully request that you ensure your catalog of titles does not include such details so that the overall Kobo catalog can offer the purest experience for our customers around the world.
 
+Please consult [BIC Statement on Best Practice for Subtitle Field in Metadata Feeds](http://www.bic.org.uk/files/pdfs/BIC%20Statement%20on%20Best%20Practice%20for%20Sub-title%20field%20FINAL%209th%20March%202018.pdf).
+
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
