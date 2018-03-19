@@ -173,7 +173,7 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 ### Best Practice	</br>
 > Please always include a subject code so customers can more easily find your ebooks. Category codes help discoverability on site. Your chosen codes correspond to our category stores on site, so the more specific you can be, the better.
 > 
-> While it's beneficial to have a main subject, please include additional subject codes with increasing precision so your target audience will find your books.
+> While it's beneficial to have a main subject, you can include additional subject codes with increasing precision so your target audience will find your books.
 
  
  Info              | Excel                       | ONIX 2.1                   | ONIX 3.0
@@ -184,9 +184,9 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 </br> 
 
 ### Notes</br>
-Best practices recommend that books include at least 3 subject category codes to maximize customer reach.
+Best practices recommend that books include up to 3 subject category codes to maximize customer reach.
 We do not currently accept Thema codes. </br>
-Kobo only supports BISAC, BIC, CULTURA, and CLIL categories codes. (Please note that the
+Kobo only supports BISAC, BIC, and CLIL categories codes. (Please note that the
 CLIL codes are accepted but mapped to BISAC via our system).</br>
 
 2016 BISAC subjects codes are supported by Rakuten Kobo.</br>
