@@ -189,7 +189,7 @@ We do not currently accept Thema codes. </br>
 Kobo only supports BISAC, BIC, and CLIL categories codes. (Please note that the
 CLIL codes are accepted but mapped to BISAC via our system).</br>
 
-2016 BISAC subjects codes are supported by Rakuten Kobo.</br>
+2017 BISAC subjects codes are supported by Rakuten Kobo.</br>
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
