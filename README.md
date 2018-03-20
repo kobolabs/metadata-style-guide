@@ -378,7 +378,7 @@ ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for act
 
 ## Publication Date	
 ### Definition</br>
-Your eBook's publication date is what appears on the title's product page on the Kobo store.
+Your eBook's initial availability date, as it should appear on the product page on the Kobo store.
 It is a display value only. 
 
 ### Best Practice	</br>
