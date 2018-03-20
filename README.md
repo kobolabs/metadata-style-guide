@@ -227,13 +227,13 @@ Kobo only supports 3 types of `<SalesRightsType>` (`<b089>`) values: 01 - for sa
 ### Definition</br>
 Your eBook's price.
 
-The Price Type Code specifies the type of price submitted (e.g. agency, wholesale, IPP).
+The Price Type Code specifies the type of price submitted (e.g. reommended retail price, agency, fixed retail price).
 
 ### Best Practice	</br>
 > **Price**</br>
 > In **ONIX**, please follow the 2.1 or 3.0 specification.</br>
 > In **Excel** price:</br>
-  > * Must not contain commas.</br>
+  > * Must not contain commas. Use a period character as a decimal point.</br>
   > * Must be formatted as a number.</br>
   > * Must not contain currency symbols.</br>
   > * Currency must be in upper-case format.</br>
@@ -242,22 +242,22 @@ The Price Type Code specifies the type of price submitted (e.g. agency, wholesal
 > Please submit prices that correspond with your territory and contract type. For prices that don't have tax included (applicable to CAD, USD, INR, JPY, MXN, PHP and BRL), our system will automatically add taxes upon customer checkout. Please see below for a list of important price type codes.</br>
 
 > Prices without tax included (CAD, USD, INR, JPY, MXN, PHP and BRL)</br>
-> 01 – Wholesale prices in CA, US and BRL, without tax included</br>
-> 41 – Agency prices in CA, US and BRL, without tax included</br>
-> 03 – IPP prices in CA, US and BRL, without tax included</br>
+> 01 – Recommended retail prices in CAD, USD and BRL, without tax included</br>
+> 41 – Agency prices in CAD, USD and BRL, without tax included</br>
+> 03 – Fixed retail prices in CAD, USD and BRL, without tax included</br>
 </br>
 
 > Prices with tax included (EUR, GBP, AUD, NZD and ZAR)</br>
-> 02 – Wholesale prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
+> 02 – Recommended retail prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
 > 42 – Agency prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
-> 04 – IPP prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included" </br>
+> 04 – Fixed retail prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included" </br>
 
 ### Correct Usage (example)	</br>
  
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** |Price: 7.99</br>Currency: CAD|`<price> `</br>`<PriceTypeCode>41</PriceTypeCode> `</br>`<PriceAmount>12.99</PriceAmount> `</br>`<CurrencyCode>CAD</CurrencyCode> `</br>`</price> `</br>|`<price> `</br>`<PriceType>02>/<PriceType> `</br>`<PriceAmount>13.99</PriceAmount> `</br>`<CurrencyCode>GBP</CurrencyCode> `</br>`</price> `</br> 
-**Short Tag**      |N/A|`<price> `<j148>41</j148> `</br>`<j151>12.99</j151> `</br>`<j152>CAD</j152> `</br>`</price> |`<price> `</br>`<x462>02</462> `</br>`<j151>13.99</j151> `</br>`<j152>GBP</j152> `</br>`</price>`</br> 
+**Reference Name** |Price: 7.99</br>Currency: CAD|`<Price> `</br>`<PriceTypeCode>41</PriceTypeCode> `</br>`<PriceAmount>12.99</PriceAmount> `</br>`<CurrencyCode>CAD</CurrencyCode> `</br>`</Price> `</br>|`<Price> `</br>`<PriceType>02>/<PriceType> `</br>`<PriceAmount>13.99</PriceAmount> `</br>`<CurrencyCode>GBP</CurrencyCode> `</br>`</Price> `</br> 
+**Short Tag**      |N/A|`<price>`</br> `<j148>41</j148> `</br>`<j151>12.99</j151> `</br>`<j152>CAD</j152> `</br>`</price>`</br> |`<price>`</br>`<x462>02</462> `</br>`<j151>13.99</j151> `</br>`<j152>GBP</j152> `</br>`</price>`</br> 
 
 ### :warning: Common Errors (example)	</br>
   * Incorrect price: $3.99</br>
