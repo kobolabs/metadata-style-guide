@@ -368,7 +368,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Excel: "inactive" instead of "deactivated"
 
 ### Notes</br>
-ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for activations and deactivations. A value of 04 will activate a book. A value of 02 will indicate that the book should be put on preorder. Any other value will quarantine the book. Any titles listed as Forthcoming (02) or Active (04) will be activated. All others will be deactivated, so we encourage you to review and update all of your titles. Please pay special attention to any titles with value 00 (Unspecified).  
+ONIX: We are only reading the `<PublishingStatus>` or `<b394>` composite for activations and deactivations. A value of 04 will activate a book. A value of 02 will indicate that the book should be put on preorder (note that Rakuten Kobo also supports Public Announcement Date: <PublishingDateRole> code 09). Any other value will quarantine the book. Any titles listed as Forthcoming (02) or Active (04) will be activated. All others will be deactivated, so we encourage you to review and update all of your titles. Please pay special attention to any titles with value 00 (Unspecified).  
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
