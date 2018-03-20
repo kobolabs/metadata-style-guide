@@ -269,8 +269,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 MXN prices must also be listed as whole numbers with zero decimal values. For MXN pricing, if decimals are provided, the prices will be rounded up or down (e.g. 249.25 MXN will be rounded to 249 MXN, while 249.75 MXN will be rounded to 250 MXN). 
 
-In both Excel and ONIX free titles must be listed with a 0 or 0.00 value. In ONIX, the Unpriced Item Type code is accepted for free titles when used correctly.
-
+In both Excel and ONIX free titles must be listed with a 0 or 0.00 value.
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
