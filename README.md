@@ -280,6 +280,7 @@ In both Excel and ONIX free titles must be listed with a 0 or 0.00 value.
 Price Effective Date (ONIX 2.1) and Price Date Role (ONIX 3.0) composites allow you to schedule promotional prices with your ONIX feed.
 
 ### Best Practice	</br>
+Rakuten Kobo supports the three price method only: 
   > * Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.</br>
   > * Ensure the promo price has both a start and end date. </br>
   > * Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. 
@@ -307,7 +308,7 @@ ONIX 2.1 example (with embedded notes for clarification):</br>
 `<j148>41</j148>`</br>
 `<j151>7.99</j151>`</br>
 `<j152>USD</j152>`</br>
-`<j161> 20151231</j161>`</br>
+`<j161>20151231</j161>`</br>
 `</price>`</br>
 **--- the regular price is reinstated at 0:00 EST Dec 31</br>
 Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and PriceDateRole 15 = Until Date**</br>
@@ -341,7 +342,8 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<CurrencyCode>USD</CurrencyCode>`</br>
 `<PriceDate>`</br>
 `<PriceDateRole>14</PriceDateRole>`</br>
-`<Date>20151231</Date> </PriceDate>`</br>
+`<Date>20151231</Date>`</br>
+`</PriceDate>`</br>
 `</Price>`</br>
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
 
