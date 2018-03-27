@@ -477,8 +477,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 **Character Limits**	|250                   |250                         |250
 
 ### Notes</br>
-* ONIX 3.0. Kobo does not support `<CollectionType>11</CollectionType>`= Collection Editoriale 
-If you want to add both collection types (Publisher and Collection Editoriale), please put the series name under `<CollectionType>10</CollectionType>`, otherwise it won't show up on store.</br>
+* ONIX 3.0. Kobo system stores, but not make use of `<CollectionType>11</CollectionType>`= Collection Editoriale, for now.  
+However, to make sure the series information is correctly displayed on the Kobo Store, please make sure to use the appopriate `<CollectionType>10</CollectionType>`.
 * Kobo supports only 1 series information.
 
 
