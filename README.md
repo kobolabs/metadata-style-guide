@@ -211,7 +211,7 @@ Your eBook's sales rights.
 Info| Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** |US,CA,BR|`<SalesRights>`</br>`<SalesRightType>01</SalesRightsType>`</br>`<RightsCountry>US CA BR</RightsCountry>`</br>`</SalesRights>`</br>|`<SalesRights>`</br>`<SalesRightsType>01</SalesRightsType>`</br>`<Territory>`</br>`<CountriesIncluded>US CA BR</CountriesIncluded>`</br>`</Territory>`</br>`</SalesRights>`</br>`<ROWSalesRightsType>03</ROWSalesRightsType>`</br>
-**Short Tag**      |N/A|Short tag: `<salesrights>`</br>`<b089>01</b089>`</br>`<b090>US CA BR</b090>`</br>`</salesrights>`</br>                            |`<salesrights>`</br>`<b089>01</b089>`</br>`<territory>`</br>`<x449>US CA BR</x449>`</br>`</territory>`</br>`<salesrights>`</br>`<x456>03</x456>`</br>
+**Short Tag**      |N/A|`<salesrights>`</br>`<b089>01</b089>`</br>`<b090>US CA BR</b090>`</br>`</salesrights>`</br>                            |`<salesrights>`</br>`<b089>01</b089>`</br>`<territory>`</br>`<x449>US CA BR</x449>`</br>`</territory>`</br>`<salesrights>`</br>`<x456>03</x456>`</br>
 
 ### :warning: Common Errors (example)	</br>
 Excel: Australia
@@ -404,8 +404,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 The On Sale Date/Embargo Date is when your title is made active on site. If your book is available for preorder, it is the date it goes from preorder to regular sale. This is also the date the epub will be available for download to customer libraries.
 
 ### Best Practice	</br>
-> If no On Sale/Embargo date is provided, the default date is the date metadata is ingested. 
-> Excel: The required date format is YYYY-MM-DD. </br>
+> If no On Sale/Embargo date is provided, the default date is the date metadata is ingested.</br>
+> Excel: The required date format is YYYY-MM-DD. 
 
 
 ### Correct Usage (example)	</br> 
