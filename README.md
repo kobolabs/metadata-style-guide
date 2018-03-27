@@ -478,7 +478,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 ### Notes</br>
 * ONIX 3.0. Kobo system stores, but not make use of `<CollectionType>11</CollectionType>`= Collection Editoriale, for now.  
-However, to make sure the series information is correctly displayed on the Kobo Store, please make sure to use the appopriate `<CollectionType>10</CollectionType>`.
+However, in order to make sure the series information is correctly displayed on the Kobo Store, please use the appopriate `<CollectionType>10</CollectionType>`.
 * Kobo supports only 1 series information.
 
 
