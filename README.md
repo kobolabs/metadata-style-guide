@@ -205,19 +205,18 @@ Your eBook's sales rights.
 > ONIX 2.1: Please use upper-case characters and separate each territory with a space in `<RightsCountry>US CA</RightsCountry>`. World Rights should be indicated as `<RightsTerritory>WORLD</RightsTerritory>`</br>
 > ONIX 3.0: Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>`</br>
 >
-> Excel: Leave this field blank if you have world rights. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma.
+> Excel: Leave this field blank if you want your by default contract sales right info to be applied. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma.
 
 ### Correct Usage (example)	</br>
 Info| Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** |US,CA,BR|`<SalesRights>`</br>`<SalesRightType>01</SalesRightsType>`</br>`<RightsCountry>US CA BR</RightsCountry>`</br>`</SalesRights>`</br>|`<SalesRights>`</br>`<SalesRightsType>01</SalesRightsType>`</br>`<Territory>`</br>`<CountriesIncluded>US CA BR</CountriesIncluded>`</br>`</Territory>`</br>`</SalesRights>`</br> 
-**Short Tag**      |N/A|Short tag: `<salesrights>`</br>`<b089>01</b089>`</br>`<b090>US CA BR</b090>`</br>`</salesrights>`</br>                            |`<salesrights>`</br>`<b089>01</b089>`</br>`<territory>`</br>`<x449>US CA BR</x449>`</br>`</territory>`</br>`<salesrights>`</br> 
+**Reference Name** |US,CA,BR|`<SalesRights>`</br>`<SalesRightType>01</SalesRightsType>`</br>`<RightsCountry>US CA BR</RightsCountry>`</br>`</SalesRights>`</br>|`<SalesRights>`</br>`<SalesRightsType>01</SalesRightsType>`</br>`<Territory>`</br>`<CountriesIncluded>US CA BR</CountriesIncluded>`</br>`</Territory>`</br>`</SalesRights>`</br>`<ROWSalesRightsType>03</ROWSalesRightsType>`</br>
+ 
+**Short Tag**      |N/A|Short tag: `<salesrights>`</br>`<b089>01</b089>`</br>`<b090>US CA BR</b090>`</br>`</salesrights>`</br>                            |`<salesrights>`</br>`<b089>01</b089>`</br>`<territory>`</br>`<x449>US CA BR</x449>`</br>`</territory>`</br>`<salesrights>`</br>`<x456>03</x456>`</br>
 
 ### :warning: Common Errors (example)	</br>
 Excel: Australia
 
-### Notes</br>
-Kobo only supports 3 types of `<SalesRightsType>` (`<b089>`) values: 01 - for sale (exclusive rights) 02 - for sale (non-exclusive rights) 03 - not for sale
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
