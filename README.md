@@ -402,13 +402,11 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 ## On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)	
 ### Definition</br>
-The On Sale Date is when your title is made active on site. If your book is available for preorder, it is the date it goes from preorder to regular sale. This is also the date the epub will be available for download to customer libraries.
-* In ONIX 3.0 The Embargo Date should be used as the On Sale Date field is deprecated.</br>
+The On Sale Date/Embargo Date is when your title is made active on site. If your book is available for preorder, it is the date it goes from preorder to regular sale. This is also the date the epub will be available for download to customer libraries.
 
 ### Best Practice	</br>
 > Excel: The required date format is YYYY-MM-DD. 
-
-> If no On Sale/Embargo date is provided, the default date is the date metadata is ingested. This could prove problematic for titles with a future on sale date as the title might go live early.
+> If no On Sale/Embargo date is provided, the default date is the date metadata is ingested. 
 
 ### Correct Usage (example)	</br> 
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
@@ -420,7 +418,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 * Excel: 2013</br>
 
 ### Notes</br>
-Date on which products are available for purchase by customers. For ONIX Editeur insists this date is provided along with Publication Date to distinguish between the date of publication and date of availability for sale. If the book is made available for preorder before the On Sale Date/Embargo Date, the On Sale Date/Embargo Date ensures the epub file is not delivered to customers until that date.
+This is the date on which products are available for purchase by customers. With ONIX, if you want to prevent early sales, EDItEUR insists that this date is provided along with Publication Date to distinguish between the date of publication and date of availability for sale. If the book is made available for preorder before the On Sale Date/Embargo Date, the On Sale Date/Embargo Date ensures the epub file is not delivered to customers until that date.
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
