@@ -388,7 +388,7 @@ It is a display value only.
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** |<sub>Publication Date: 2010-01-16</sub>| `<PublicationDate>20130315</PublicationDate>`</br>|`<PublishingDate>`</br>`<PublishingDateRole>01</PublishingDateRole>`</br>`<Date>20150219</Date>`</br>`</PublishingDate>`</br> 
-**Short Tag**      |N/A|`<b003>20130315</b003>`</br>|`<publishingdate>`</br>`<x448>01</x448>`</br>`<b306>20150219</b306>`</br>`</publishingdate>`</br> 
+**Short Tag**|N/A|`<b003>20130315</b003>`</br>|`<publishingdate>`</br>`<x448>01</x448>`</br>`<b306>20150219</b306>`</br>`</publishingdate>`</br> 
 ### :warning: Common Errors (example)	</br>
 * Excel: 21/11/2013</br>
 * Excel: 2013</br>
@@ -405,7 +405,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 The On Sale Date/Embargo Date is when your title is made active on site. If your book is available for preorder, it is the date it goes from preorder to regular sale. This is also the date the epub will be available for download to customer libraries.
 
 ### Best Practice	</br>
-> Excel: The required date format is YYYY-MM-DD. 
+> Excel: The required date format is YYYY-MM-DD. </br>
 > If no On Sale/Embargo date is provided, the default date is the date metadata is ingested. 
 
 ### Correct Usage (example)	</br> 
