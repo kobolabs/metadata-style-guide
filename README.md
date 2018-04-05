@@ -506,7 +506,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Incorrect: eight
 
 ### Notes</br>
-* Rakuten Kobo system ingest and store the Age Range information, but it's not used on our store currently. 
+Rakuten Kobo system ingests and stores the Age Range information, but it's not used on our store currently. 
 
 
 
