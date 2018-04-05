@@ -582,7 +582,7 @@ Please consult [BIC Statement on Best Practice for Subtitle Field in Metadata Fe
 
 ## Imprint	
 ### Definition</br>
-Your imprint name as it should appear on the Kobo store.
+Your imprint, or the marketing brand you want to apply to your book, as you want it to appear on the product page on the Rakuten Kobo Store.   
 
 ### Best Practice	</br>
 > 
