@@ -487,7 +487,6 @@ However, in order to make sure the series information is correctly displayed on 
 
 ## Audience Age Range - From/Audience Age Range - To	
 ### Definition</br>
-**Strongly Recommended for Kids' books**
 The "From" age value for your eBook's audience age range. The "To" age value for your eBook's audience age range.
 
 ### Best Practice	</br>
@@ -507,9 +506,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Incorrect: eight
 
 ### Notes</br>
-* We use AgeRangeQualifier = 17 to determine a title's eligibility for the Kids' Store. 
-* When Audience Age Range - To is 18 or greater, the title will not be filtered into our Kid's Store. 
-* Range limit is 0 To 120. 
+* Rakuten Kobo system ingest and store the Age Range information, but it's not used on our store currently. 
 
 
 
