@@ -431,16 +431,17 @@ The ISBN of the print version of your book, that partners who sell print books c
 
 ### Best Practice	</br>
 > In Excel, use column C "Related ISBN". </br>
-> In ONIX, RelationCode 13 equals Epublication based on (print product)</br>
+> In ONIX, RelationCode 06 equals "alternative format", you can also use Relation code 13 for specific "Epublication based on (print product)"</br>
   > * ProductIDType 15=ISBN-13.</br>
-  > * and ProductForm BA=Book.</br>
+  > * ProductForm BA=Book.</br>
+  > * ProductForm AA=Audio.</br>
 
 > Multiple RelatedProduct could be linked to 1 title, as soon as the corresponding ISBN are different in each RelatedProduct composites.
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Related ISBN:9782246731412                             |`<RelatedProduct>`</br>`<RelationCode>13</RelationCode>`</br>`<ProductIdentifier>`</br>`<ProductIDType>15</ProductIDType>`</br>`<IDValue>9782246731412</IDValue>`</br>`</ProductIdentifier>`</br>`<ProductForm>BA</ProductForm>`</br>`</RelatedProduct>`</br> 
+**Reference Name** |Related ISBN:9782246731412                             |`<RelatedProduct>`</br>`<RelationCode>06</RelationCode>`</br>`<ProductIdentifier>`</br>`<ProductIDType>15</ProductIDType>`</br>`<IDValue>9782246731412</IDValue>`</br>`</ProductIdentifier>`</br>`<ProductForm>BA</ProductForm>`</br>`</RelatedProduct>`</br> 
 **Short Tag**      |N/A                              |`<relatedproduct>`</br>`<h208>13</h208>`</br>`<productidentifier>`</br>`<b221>15</b221>`</br>`<b244>9783540261698</b244>`</br>`</productidentifier>`</br>`<b012>BA</b012>`</br>`</relatedproduct>`</br>   
 
 ### Notes</br>
