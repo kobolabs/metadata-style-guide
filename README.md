@@ -30,6 +30,13 @@
 * [Subtitle](#subtitle)</br>
 * [Imprint](#imprint)</br>
 
+### Audiobooks Metadata
+* [Product Form](#productform)</br>
+* [AudioBook Edition](#audiobookedition)</br>
+* [Contributor Type](#contributortype)</br>
+* [Duration](#duration)</br>
+* [File Size](#filesize)</br>
+
 
 
 </br></br>
@@ -593,6 +600,28 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
 **Reference Name** |Imprint: Your Imprint| `<Imprint>`</br> `<ImprintName>Imprint Imprint</ImprintName>`</br> `</Imprint>`</br> 
 **Short Tag**      |  N/A                           | `<imprint>`</br> `<b079>Imprint Imprint</b079>`</br> `</imprint>`</br> 
+  
+**Character Limits**	|250|250
+
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+# Audiobooks Metadata
+For Audiobooks, specific metadata have to be added to your metadata feed. 
+
+## Product Form	
+*Required Field* - Based on List 150 (ONIX 3.0 - [Code list 7](https://ns.editeur.org/onix/en/150) in ONIX 2.1) - If `<ProductForm>` begins with 'A', metadata.format will be automatically recognised as AUDIO. </br>
+  
+Should be informed within the `<DescriptiveDetail>` composite. 
+
+
+### Correct Usage (example)	</br>
+Info               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Detected by use of the Audiobooks template| `<ProductForm>AA</ProductForm>`</br> 
+**Short Tag**      |  N/A                           | `<b012>AA</b012>`</br> 
   
 **Character Limits**	|250|250
 
