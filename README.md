@@ -660,8 +660,7 @@ Base on EDItEUR [Code list 17](https://ns.editeur.org/onix/en/17)
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>
-`</br> 
+**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>`</br> 
 **Short Tag**      |  N/A                           | `<b035>E03</b035>`</br> 
   
 
