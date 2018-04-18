@@ -637,7 +637,7 @@ Should be informed within the `<DescriptiveDetail>` composite.
 
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** | Audiobook Edition colonne C of the Template |`<EditionTypeCode>UBR</EditionTypeCode> `</br> or `<EditionTypeCode>ABR</EditionTypeCode> `</br>|`<EditionType>UBR</EditionType>`</br> or `<EditionType>ABR</EditionType>`</br> 
+**Reference Name** | Audiobook Edition col. C of the Template |`<EditionTypeCode>UBR</EditionTypeCode> `</br> or `<EditionTypeCode>ABR</EditionTypeCode> `</br>|`<EditionType>UBR</EditionType>`</br> or `<EditionType>ABR</EditionType>`</br> 
 **Short Tag**      |N/A                             |`<b056>UBR</b056>`</br> or`<b056>ABR</b056>`</br>|`<x419>UBR</x419>`</br> or `<x419>ABR</x419>`</br> 
   
 
@@ -660,7 +660,7 @@ Base on EDItEUR [Code list 17](https://ns.editeur.org/onix/en/17)
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>`</br> 
+**Reference Name** |Contributor Type col. T of the template</br> 3 contributors max.| `<ContributorRole>E03</ContributorRole>`</br> 
 **Short Tag**      |  N/A                           | `<b035>E03</b035>`</br> 
   
 
