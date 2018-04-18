@@ -694,8 +694,44 @@ Value               | is supported by Kobo                       | Description
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>`</br> 
-**Short Tag**      |  N/A                           | `<b035>E03</b035>`</br> 
+**Reference Name** |N/A | `<Extent>`</br> 
+`<ExtentType>09</ExtentType>`</br> 
+`<ExtentValue>457</ExtentValue>`</br> 
+`<ExtentUnit>05</ExtentUnit>`</br> 
+`</Extent>`</br> 
+**Short Tag**      |  N/A                           | `<extend>`</br>
+`<b218>09</218>`</br>
+`<b219>457</b219>`</br>
+`<b220>16</b220>`</br>
+`</extend>`</br> 
+  
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+## Filesize
+Parse the size extant for file-size information. Store both the ONIX values and the value normalized to bytes
+
+Information is stored in Rakuten Kobo system, but is not used. 
+
+Based on EDItEUR</br>
+[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  22 = FileSize.</br>
+
+
+### Correct Usage (example)	</br>
+Info               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |N/A | `<Extent>`</br> 
+`<ExtentType>22</ExtentType>`</br> 
+`<ExtentValue>19</ExtentValue>`</br> 
+`<ExtentUnit>500</ExtentUnit>`</br> 
+`</Extent>`</br> 
+**Short Tag**      |  N/A                           | `<extend>`</br>
+`<b218>22</218>`</br>
+`<b219>19</b219>`</br>
+`<b220>500</b220>`</br>
+`</extend>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
