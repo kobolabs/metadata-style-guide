@@ -623,8 +623,23 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Reference Name** |Detected by use of the Audiobooks template| `<ProductForm>AA</ProductForm>`</br> 
 **Short Tag**      |  N/A                           | `<b012>AA</b012>`</br> 
   
-**Character Limits**	|250|250
 
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+
+## AudioBook Edition	
+*Required Field* - The Edition of your audiobook (Abridged or unabridged version). For unabridged, indicate UBR, for abridged, indicate ABR.</br>
+  
+Should be informed within the `<DescriptiveDetail>` composite. 
+
+
+Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** | Audiobook Edition colonne C of the Template |`<EditionTypeCode>UBR</EditionTypeCode> `</br>|`<EditionType>UBR</EditionType>`</br> 
+**Short Tag**      |N/A                             |`<b056>UBR</b056>`</br> or`<b056>ABR</b056>`</br>|`<x419>UBR</x419>`</br> or `<x419>ABR</x419>`</br> 
+  
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
