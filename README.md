@@ -35,7 +35,7 @@
 * [AudioBook Edition](#audiobook-edition)</br>
 * [Contributor Type](#contributor-type)</br>
 * [Duration](#duration)</br>
-* [File Size](#file-size)</br>
+* [File Size](#filesize)</br>
 
 
 
@@ -694,16 +694,8 @@ Value               | is supported by Kobo                       | Description
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |N/A | `<Extent>`</br> 
-`<ExtentType>09</ExtentType>`</br> 
-`<ExtentValue>457</ExtentValue>`</br> 
-`<ExtentUnit>05</ExtentUnit>`</br> 
-`</Extent>`</br> 
-**Short Tag**      |  N/A                           | `<extend>`</br>
-`<b218>09</218>`</br>
-`<b219>457</b219>`</br>
-`<b220>16</b220>`</br>
-`</extend>`</br> 
+**Reference Name** |N/A | `<Extent>`</br> `<ExtentType>09</ExtentType>`</br> `<ExtentValue>457</ExtentValue>`</br> `<ExtentUnit>05</ExtentUnit>`</br> `</Extent>`</br> 
+**Short Tag**      |  N/A                           | `<extend>`</br>`<b218>09</218>`</br>`<b219>457</b219>`</br>`<b220>16</b220>`</br>`</extend>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
@@ -722,16 +714,8 @@ Based on EDItEUR</br>
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |N/A | `<Extent>`</br> 
-`<ExtentType>22</ExtentType>`</br> 
-`<ExtentValue>19</ExtentValue>`</br> 
-`<ExtentUnit>500</ExtentUnit>`</br> 
-`</Extent>`</br> 
-**Short Tag**      |  N/A                           | `<extend>`</br>
-`<b218>22</218>`</br>
-`<b219>19</b219>`</br>
-`<b220>500</b220>`</br>
-`</extend>`</br> 
+**Reference Name** |N/A | `<Extent>`</br>`<ExtentType>22</ExtentType>`</br>`<ExtentValue>19</ExtentValue>`</br>`<ExtentUnit>500</ExtentUnit>`</br>`</Extent>`</br> 
+**Short Tag**      |  N/A                           | `<extend>`</br>`<b218>22</218>`</br>`<b219>19</b219>`</br>`<b220>500</b220>`</br>`</extend>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
