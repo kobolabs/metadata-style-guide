@@ -669,7 +669,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 </br>
 
 ## Duration
-Parse the duration extant for time-duration information. Store both the ONIX values and the value normalized to seconds.
+Parse the duration extent for time-duration information. Store both the ONIX values and the value normalized to seconds.
   
 Base on EDItEUR </br>
 [Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  09 = Duration.</br>
@@ -703,7 +703,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 </br>
 
 ## Filesize
-Parse the size extant for file-size information. Store both the ONIX values and the value normalized to bytes
+Parse the size extent for file-size information. Store both the ONIX values and the value normalized to bytes
 
 Information is stored in Rakuten Kobo system, but is not used. 
 
