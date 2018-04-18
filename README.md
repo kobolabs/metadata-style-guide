@@ -32,10 +32,10 @@
 
 ### Audiobooks Metadata
 * [Product Form](#product-form)</br>
-* [AudioBook Edition](#audiobookedition)</br>
-* [Contributor Type](#contributortype)</br>
+* [AudioBook Edition](#audiobook-edition)</br>
+* [Contributor Type](#contributor-type)</br>
 * [Duration](#duration)</br>
-* [File Size](#filesize)</br>
+* [File Size](#file-size)</br>
 
 
 
@@ -637,7 +637,7 @@ Should be informed within the `<DescriptiveDetail>` composite.
 
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** | Audiobook Edition colonne C of the Template |`<EditionTypeCode>UBR</EditionTypeCode> `</br>|`<EditionType>UBR</EditionType>`</br> 
+**Reference Name** | Audiobook Edition colonne C of the Template |`<EditionTypeCode>UBR</EditionTypeCode> `</br> or `<EditionTypeCode>ABR</EditionTypeCode> `</br>|`<EditionType>UBR</EditionType>`</br> or `<EditionType>ABR</EditionType>`</br> 
 **Short Tag**      |N/A                             |`<b056>UBR</b056>`</br> or`<b056>ABR</b056>`</br>|`<x419>UBR</x419>`</br> or `<x419>ABR</x419>`</br> 
   
 
