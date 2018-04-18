@@ -612,7 +612,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 For Audiobooks, specific metadata have to be added to your metadata feed. 
 
 ## Product Form	
-*Required Field* - Based on List 150 (ONIX 3.0 - [Code list 7](https://ns.editeur.org/onix/en/150) in ONIX 2.1) - If `<ProductForm>` begins with 'A', metadata.format will be automatically recognised as AUDIO. </br>
+*Required Field* - Based on [Code List 150](https://ns.editeur.org/onix/en/150) (ONIX 3.0 - Code list 7 in ONIX 2.1) - If `<ProductForm>` begins with 'A', metadata.format will be automatically recognised as AUDIO. </br>
   
 Should be informed within the `<DescriptiveDetail>` composite. 
 
@@ -639,6 +639,55 @@ Info               | Excel                       | ONIX 2.1                   | 
 -------------- | --------------------------- | ---------------------------|---------------------------
 **Reference Name** | Audiobook Edition colonne C of the Template |`<EditionTypeCode>UBR</EditionTypeCode> `</br> or `<EditionTypeCode>ABR</EditionTypeCode> `</br>|`<EditionType>UBR</EditionType>`</br> or `<EditionType>ABR</EditionType>`</br> 
 **Short Tag**      |N/A                             |`<b056>UBR</b056>`</br> or`<b056>ABR</b056>`</br>|`<x419>UBR</x419>`</br> or `<x419>ABR</x419>`</br> 
+  
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+
+## Contributor Type	
+Add explicit support for: 
+</br>
+  * E03 Narrator
+  * E07 Reader
+  * E08 Performed by
+  * E09 Speaker Of a speech
+  
+Base on EDItEUR [Code list 17](https://ns.editeur.org/onix/en/17)
+
+
+### Correct Usage (example)	</br>
+Info               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>
+`</br> 
+**Short Tag**      |  N/A                           | `<b035>E03</b035>`</br> 
+  
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+## Duration
+Parse the duration extant for time-duration information. Store both the ONIX values and the value normalized to seconds.
+  
+Base on EDItEUR </br>
+[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  09 = Duration.
+[Code list 24](https://ns.editeur.org/onix/en/24) - `<ExtendUnit>` minutes; hours ; seconds etc… Only codes 04, 05, 06, 14, 15 and 16 are supported by Kobo as ExtentUnit values for duration extent. Other values will be ignored: 
+
+Value               | is supported by Kobo                       | Description
+-------------- | --------------------------- | ---------------------------
+02| No| Words 
+03| No| Words
+
+
+### Correct Usage (example)	</br>
+Info               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>
+`</br> 
+**Short Tag**      |  N/A                           | `<b035>E03</b035>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
