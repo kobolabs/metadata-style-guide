@@ -678,15 +678,24 @@ Base on EDItEUR </br>
 
 Value               | is supported by Kobo                       | Description
 -------------- | --------------------------- | ---------------------------
-02| No| Words 
-03| No| Words
+02| No| Words (will Fail ingestion) 
+03| No| Pages (will Fail ingestion)
+04| Yes| Hours (integer and decimals) 
+05| Yes| Minutes (integer and decimals)
+06| Yes| Seconds (integer only)
+11| No| Words (will be ignored)
+14| Yes| Hours HHH
+15| Yes| Hours and minutes HHHMM
+16| Yes| Hours minutes seconds HHHMMSS
+17| Yes| Bytes
+18| Yes| Kbytes
+19| Yes| Mbytes
 
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>
-`</br> 
+**Reference Name** |Contributor Type col. T of the template| `<ContributorRole>E03</ContributorRole>`</br> 
 **Short Tag**      |  N/A                           | `<b035>E03</b035>`</br> 
   
 
