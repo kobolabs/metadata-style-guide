@@ -30,7 +30,7 @@
 * [Subtitle](#subtitle)</br>
 * [Imprint](#imprint)</br>
 
-### Audiobooks Metadata
+### Audiobooks Specific Metadata
 * [Product Form](#product-form)</br>
 * [AudioBook Edition](#audiobook-edition)</br>
 * [Contributor Type](#contributor-type)</br>
@@ -608,7 +608,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 </br>
 </br>
 
-# Audiobooks Metadata
+# Audiobooks Specific Metadata
 For Audiobooks, specific metadata have to be added to your metadata feed. 
 
 ## Product Form	
