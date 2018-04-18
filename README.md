@@ -672,7 +672,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Parse the duration extant for time-duration information. Store both the ONIX values and the value normalized to seconds.
   
 Base on EDItEUR </br>
-[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  09 = Duration.
+[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  09 = Duration.</br>
 [Code list 24](https://ns.editeur.org/onix/en/24) - `<ExtendUnit>` minutes; hours ; seconds etc… Only codes 04, 05, 06, 14, 15 and 16 are supported by Kobo as ExtentUnit values for duration extent. Other values will be ignored: 
 
 Value               | is supported by Kobo                       | Description
