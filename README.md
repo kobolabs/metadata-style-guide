@@ -21,14 +21,15 @@
 * [Publication Date](#publication-date)</br>
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
-* [Series Name/Series Number](#series-nameseries-number)</br>
-* [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to)</br>
+* [Series Name/Series Number](#series-nameseries-number)(When applicable)</br>
+* [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to)(especially for children's, teenage's and School Books)</br>
 * [Product Availability](#product-availability)</br>
-* [Master Brand](#master-brand)</br>
+* [Imprint](#imprint)</br>
 
 ### Recommended if applicable
 * [Subtitle](#subtitle)</br>
-* [Imprint](#imprint)</br>
+* [Master Brand](#master-brand) (If applicable)</br>
+
 
 ### Audiobooks Specific Metadata
 * [Product Form](#product-form)</br>
