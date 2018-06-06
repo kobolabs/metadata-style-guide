@@ -686,8 +686,8 @@ Base on EDItEUR </br>
 
 Value               | is supported by Kobo                       | Description
 -------------- | --------------------------- | ---------------------------
-02| No| Words (will Fail ingestion) 
-03| No| Pages (will Fail ingestion)
+02| No| Words (will Fail ingestion for Audiobooks metadata) 
+03| No| Pages (will Fail ingestion for Audiobooks metadata)
 04| Yes| Hours (integer and decimals) 
 05| Yes| Minutes (integer and decimals)
 06| Yes| Seconds (integer only)
