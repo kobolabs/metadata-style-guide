@@ -144,7 +144,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      |N/A                             |`<contributor>`</br>`<b034>1</b034>`</br>`<b035>A01</b035>`</br>`<b036>Ben Byrne</b036>`</br>`<b037>Byrne, Ben</b037>`</br>`<b039>Ben</b039>`</br>`<b040>Byrne</b040>`</br>`</contributor>`</br>   
 **Character Limits**	|250|250
 ### :warning: Common Errors (example)	</br>
-Incorrect: Shubert, David
+Incorrect: Shubert, David (Excel)
+Incorrect: Shubert, David (if not used in `<PersonNameInverted>` and/or not accompagnied by `<PersonName>`)
 
 ### Notes</br>
 Excel: This is where you can list the names of your eBook's contributors. If the contributors are the same type (i.e. more than one author, or editor, etc), you can put them in the same cell separated by a comma.
@@ -178,7 +179,7 @@ Please note that currently we don't support multiple language codes for a single
 
 ## Subject Code	
 ### Definition</br>
-A subject category code from the scheme identified (BISAC, BIC, etc), which will help catalogue ebooks.
+A subject category code from the scheme identified (BISAC, BIC, THEMA etc), which will help catalogue ebooks.
 
 ### Best Practice	</br>
 > Please always include a subject code so customers can more easily find your ebooks. Category codes help discoverability on site. Your chosen codes correspond to our category stores on site, so the more specific you can be, the better.
@@ -194,8 +195,8 @@ A subject category code from the scheme identified (BISAC, BIC, etc), which will
 </br> 
 
 ### Notes</br>
-Best practices recommend that books include up to 3 subject category codes to maximize customer reach.
-We do not currently accept Thema codes. </br>
+Best practices recommend that books include up to 3 subject category codes if necessary to describe your book properly.
+We do not yet accept Thema codes, but we highly encourage you to start using and sending it. </br>
 Kobo only supports BISAC, BIC and CLIL categories codes. (Please note that the
 CLIL codes are accepted but mapped to BISAC via our system).</br>
 
@@ -214,7 +215,7 @@ Your eBook's sales rights.
 >
 > ONIX 2.1: Please use upper-case characters and separate each territory with a space in `<RightsCountry>US CA</RightsCountry>`. World Rights should be indicated as `<RightsTerritory>WORLD</RightsTerritory>`</br>
 > ONIX 3.0: Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>`</br>
->
+> Good practice in 2.1 and mandatory in 3.0, you should also list countries where the book is **not** for sale (sales rights type 03) 
 > Excel: Leave this field blank if you want your by default contract sales right info to be applied. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma.
 
 ### Correct Usage (example)	</br>
