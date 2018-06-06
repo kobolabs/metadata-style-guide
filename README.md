@@ -85,7 +85,7 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
  
 ### Best Practice	</br>
 > Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions.
-ONIX has a specific field for the "A" and "The": <TitlePrefix>.
+ONIX has a specific field for the "A" and "The": `<TitlePrefix>`.
 Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
 
 ### Correct Usage (example)	</br>
