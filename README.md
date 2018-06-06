@@ -28,7 +28,7 @@
 
 ### Recommended if applicable
 * [Subtitle](#subtitle)</br>
-* [Master Brand](#master-brand) (If applicable)</br>
+* [Master Brand](#master-brand)</br>
 
 
 ### Audiobooks Specific Metadata
@@ -45,7 +45,7 @@
 ## ISBN 
 
 ### Definition</br>
-Your eBook's electronic ISBN. Must be 13 digits in length.
+Your eBook's ISBN. Must be 13 digits in length.
   
 ### Best Practice	</br>
 > In ONIX the ISBN must be unhyphenated.
@@ -63,15 +63,15 @@ Info | Excel                                   | ONIX 2.1 and 3.0
 
 ### Notes</br>
 ONIX: `ProductIDType` 03 is mandatory as it represents how your books will be identified in universal trading transactions.  
+`ProductIDType` 15 is also mandatory if your product has an ISBN (and these two, GTIN-13/ISBN, will always be identical for book products)
 
 Multiple Product Identifers are allowed per title. We parse `ProductIDs` of product types in this order: ‘03’, ‘15’, ‘02’, ‘01.’ Please note we will only use type ‘02’ in cases where neither type ‘03’, nor type ‘15’ is provided. 
 
 When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 should be a distinct ISBN.   
 </br>
+01 – Proprietary product ID </br>
 02 - ISBN-10 </br>
-03 - EAN-13 (GTIN-13) </br>
-04 - UPC </br>
-13 - LCCN </br>
+03 - GTIN-13 </br>
 15 - ISBN-13</br>
 
 
@@ -81,10 +81,12 @@ When supplying ISBNs to the library sector, the ISBN-13 `ProductIDType` 15 shoul
 ## Title
 
 ### Definition</br>
- Your eBook's title as it should appear on the product page.
+ Your eBook's title as it appears in the book and as it should appear on the product page.
  
 ### Best Practice	</br>
-> Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
+> Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions.
+ONIX has a specific field for the "A" and "The": <TitlePrefix>.
+Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
 
 ### Correct Usage (example)	</br>
 Info               | Excel                                   | ONIX 2.1                                | ONIX 3.0
