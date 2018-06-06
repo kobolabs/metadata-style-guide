@@ -574,7 +574,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 ## Subtitle	
 ### Definition</br>
-Your eBook's subtitle as appears on the book and as it should appear on the product page.
+Your eBook's subtitle as it appears on the book and as it should appear on the product page.
 
 ### Best Practice	</br>
 > Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
