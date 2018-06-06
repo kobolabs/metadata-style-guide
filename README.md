@@ -455,8 +455,8 @@ The ISBN of the print version of your book, that partners who sell print books c
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Related ISBN:9782246731412                             |`<RelatedProduct>`</br>`<RelationCode>06</RelationCode>`</br>`<ProductIdentifier>`</br>`<ProductIDType>15</ProductIDType>`</br>`<IDValue>9782246731412</IDValue>`</br>`</ProductIdentifier>`</br>`<ProductForm>BA</ProductForm>`</br>`</RelatedProduct>`</br> 
-**Short Tag**      |N/A                              |`<relatedproduct>`</br>`<h208>13</h208>`</br>`<productidentifier>`</br>`<b221>15</b221>`</br>`<b244>9783540261698</b244>`</br>`</productidentifier>`</br>`<b012>BA</b012>`</br>`</relatedproduct>`</br>   
+**Reference Name** |Related ISBN:9782246731412                             |`<RelatedProduct>`</br>`<RelationCode>06</RelationCode>`</br>`<ProductIdentifier>`</br>`<ProductIDType>15</ProductIDType>`</br>`<IDValue>9782246731412</IDValue>`</br>`</ProductIdentifier>`</br>`<ProductForm>BB</ProductForm>`</br>`</RelatedProduct>`</br> 
+**Short Tag**      |N/A                              |`<relatedproduct>`</br>`<h208>13</h208>`</br>`<productidentifier>`</br>`<b221>15</b221>`</br>`<b244>9783540261698</b244>`</br>`</productidentifier>`</br>`<b012>BB</b012>`</br>`</relatedproduct>`</br>   
 
 ### Notes</br>
 While Kobo Inc does not itself use the `<RelatedProduct>` composite, it is a useful and necessary tag for many of our partners who sell physical books.
@@ -574,7 +574,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 ## Subtitle	
 ### Definition</br>
-Your eBook's subtitle as it should appear on the product page.
+Your eBook's subtitle as appears on the book and as it should appear on the product page.
 
 ### Best Practice	</br>
 > Please refrain from appending "A" or "The" to the end of the title as it might interfere with search functions. Also, please refrain from adding the subtitle in the title field and use the appropriate Excel field or ONIX tag.
@@ -607,8 +607,8 @@ Strongly recommanded, especially if different from Publisher's name.
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Imprint: Your Imprint| `<Imprint>`</br> `<ImprintName>Imprint Imprint</ImprintName>`</br> `</Imprint>`</br> 
-**Short Tag**      |  N/A                           | `<imprint>`</br> `<b079>Imprint Imprint</b079>`</br> `</imprint>`</br> 
+**Reference Name** |Imprint: Voyager| `<Imprint>`</br> `<ImprintName>Voyager</ImprintName>`</br> `</Imprint>`</br> 
+**Short Tag**      |  N/A                           | `<imprint>`</br> `<b079>Voyager</b079>`</br> `</imprint>`</br> 
   
 **Character Limits**	|250|250
 
@@ -629,8 +629,8 @@ Should be informed within the `<DescriptiveDetail>` composite.
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Detected by use of the Audiobooks template| `<ProductForm>AA</ProductForm>`</br> 
-**Short Tag**      |  N/A                           | `<b012>AA</b012>`</br> 
+**Reference Name** |Detected by use of the Audiobooks template| `<ProductForm>AJ</ProductForm>`</br> 
+**Short Tag**      |  N/A                           | `<b012>AJ</b012>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
@@ -658,8 +658,8 @@ Info               | Excel                       | ONIX 2.1                   | 
 ## Contributor Type	
 Add explicit support for: 
 </br>
-  * E03 Narrator
   * E07 Reader
+  * E03 Narrator
   * E08 Performed by
   * E09 Speaker Of a speech
   
@@ -681,8 +681,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Parse the duration extent for time-duration information. Store both the ONIX values and the value normalized to seconds.
   
 Base on EDItEUR </br>
-[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  09 = Duration.</br>
-[Code list 24](https://ns.editeur.org/onix/en/24) - `<ExtendUnit>` minutes; hours ; seconds etc… Only codes 04, 05, 06, 14, 15 and 16 are supported by Kobo as ExtentUnit values for duration extent. Other values will be ignored: 
+[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtentType>` code  09 = Duration.</br>
+[Code list 24](https://ns.editeur.org/onix/en/24) - `<ExtentUnit>` minutes; hours ; seconds etc… Only codes 04, 05, 06, 14, 15 and 16 are supported by Kobo as ExtentUnit values for duration extent. Other values will be ignored: 
 
 Value               | is supported by Kobo                       | Description
 -------------- | --------------------------- | ---------------------------
@@ -704,7 +704,7 @@ Value               | is supported by Kobo                       | Description
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
 **Reference Name** |N/A | `<Extent>`</br> `<ExtentType>09</ExtentType>`</br> `<ExtentValue>457</ExtentValue>`</br> `<ExtentUnit>05</ExtentUnit>`</br> `</Extent>`</br> 
-**Short Tag**      |  N/A                           | `<extend>`</br>`<b218>09</218>`</br>`<b219>457</b219>`</br>`<b220>16</b220>`</br>`</extend>`</br> 
+**Short Tag**      |  N/A                           | `<extent>`</br>`<b218>09</218>`</br>`<b219>0073600</b219>`</br>`<b220>16</b220>`</br>`</extent>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
@@ -717,14 +717,14 @@ Parse the size extent for file-size information. Store both the ONIX values and 
 Information is stored in Rakuten Kobo system, but is not used. 
 
 Based on EDItEUR</br>
-[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtendType>` code  22 = FileSize.</br>
+[Code list 23](https://ns.editeur.org/onix/en/23) - `<ExtentType>` code  22 = FileSize.</br>
 
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |N/A | `<Extent>`</br>`<ExtentType>22</ExtentType>`</br>`<ExtentValue>19</ExtentValue>`</br>`<ExtentUnit>500</ExtentUnit>`</br>`</Extent>`</br> 
-**Short Tag**      |  N/A                           | `<extend>`</br>`<b218>22</218>`</br>`<b219>19</b219>`</br>`<b220>500</b220>`</br>`</extend>`</br> 
+**Reference Name** |N/A | `<Extent>`</br>`<ExtentType>22</ExtentType>`</br>`<ExtentValue>500</ExtentValue>`</br>`<ExtentUnit>19</ExtentUnit>`</br>`</Extent>`</br> 
+**Short Tag**      |  N/A                           | `<extent>`</br>`<b218>22</218>`</br>`<b219>500</b219>`</br>`<b220>19</b220>`</br>`</extent>`</br> 
   
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
