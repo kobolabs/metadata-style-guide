@@ -267,8 +267,8 @@ The Price Type Code specifies the type of price submitted (e.g. reommended retai
  
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** |Price: 7.99</br>Currency: CAD|`<Price> `</br>`<PriceTypeCode>41</PriceTypeCode> `</br>`<PriceAmount>12.99</PriceAmount> `</br>`<CurrencyCode>CAD</CurrencyCode> `</br>`</Price> `</br>|`<Price> `</br>`<PriceType>02>/<PriceType> `</br>`<PriceAmount>13.99</PriceAmount> `</br>`<CurrencyCode>GBP</CurrencyCode> `</br>`</Price> `</br> 
-**Short Tag**      |N/A|`<price>`</br> `<j148>41</j148> `</br>`<j151>12.99</j151> `</br>`<j152>CAD</j152> `</br>`</price>`</br> |`<price>`</br>`<x462>02</462> `</br>`<j151>13.99</j151> `</br>`<j152>GBP</j152> `</br>`</price>`</br> 
+**Reference Name** |Price: 7.99</br>Currency: CAD|`<Price> `</br>`<PriceTypeCode>41</PriceTypeCode> `</br>`<PriceAmount>7.99</PriceAmount> `</br>`<CurrencyCode>CAD</CurrencyCode> `</br>`</Price> `</br>|`<Price> `</br>`<PriceType>41<PriceType> `</br>`<PriceAmount>7.99</PriceAmount> `</br>`<CurrencyCode>CAD</CurrencyCode> `</br>`</Price> `</br> 
+**Short Tag**      |N/A|`<price>`</br> `<j148>41</j148> `</br>`<j151>7.99</j151> `</br>`<j152>CAD</j152> `</br>`</price>`</br> |`<price>`</br>`<x462>41</462> `</br>`<j151>7.99</j151> `</br>`<j152>CAD</j152> `</br>`</price>`</br> 
 
 ### :warning: Common Errors (example)	</br>
   * Incorrect price: $3.99</br>
