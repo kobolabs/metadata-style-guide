@@ -215,7 +215,9 @@ Your eBook's sales rights.
 >
 > ONIX 2.1: Please use upper-case characters and separate each territory with a space in `<RightsCountry>US CA</RightsCountry>`. World Rights should be indicated as `<RightsTerritory>WORLD</RightsTerritory>`</br>
 > ONIX 3.0: Similarly, in `<CountriesIncluded>` please use upper-case characters and separate each territory with a space. World rights should be indicated as `<RegionsIncluded>WORLD</RegionsIncluded>`</br>
+>
 > Good practice in 2.1 and mandatory in 3.0, you should also list countries where the book is **not** for sale (sales rights type 03) 
+>
 > Excel: Leave this field blank if you want your by default contract sales right info to be applied. If your eBook can only be sold in a specific list of countries, you must indicate their two-letter country codes in this field with each country code separated by a comma.
 
 ### Correct Usage (example)	</br>
@@ -412,7 +414,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 
 ## On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)	
 ### Definition</br>
-The On Sale Date/Embargo Date is when your title is made active on site. If your book is available for preorder, it is the date it goes from preorder to regular sale. This is also the date the epub will be available for download to customer libraries.
+The On Sale Date/Embargo Date is when your title becomes available to download from the site. If your book is available for preorder, it is the date it goes from preorder to regular sale. This is also the date the epub will be available for download to customer libraries.
 
 ### Best Practice	</br>
 > If no On Sale/Embargo date is provided, the default date is the date metadata is ingested.</br>
@@ -443,9 +445,10 @@ The ISBN of the print version of your book, that partners who sell print books c
 ### Best Practice	</br>
 > In Excel, use column C "Related ISBN". </br>
 > In ONIX, RelationCode 06 equals "alternative format", you can also use Relation code 13 for specific "Epublication based on (print product)"</br>
+> For example, and according to the correct format code from [list 150](https://ns.editeur.org/onix/en/150):
   > * ProductIDType 15=ISBN-13.</br>
-  > * ProductForm BA=Book.</br>
-  > * ProductForm AA=Audio.</br>
+  > * ProductForm BB=Book.</br>
+  > * ProductForm AC=Audio.</br>
 
 > Multiple RelatedProduct could be linked to 1 title, as soon as the corresponding ISBN are different in each RelatedProduct composites.
 
