@@ -144,7 +144,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Short Tag**      |N/A                             |`<contributor>`</br>`<b034>1</b034>`</br>`<b035>A01</b035>`</br>`<b036>Ben Byrne</b036>`</br>`<b037>Byrne, Ben</b037>`</br>`<b039>Ben</b039>`</br>`<b040>Byrne</b040>`</br>`</contributor>`</br>   
 **Character Limits**	|250|250
 ### :warning: Common Errors (example)	</br>
-Incorrect: Shubert, David (Excel)
+Incorrect: Shubert, David (Excel)</br>
 Incorrect: Shubert, David (if not used in `<PersonNameInverted>` and/or not accompagnied by `<PersonName>`)
 
 ### Notes</br>
