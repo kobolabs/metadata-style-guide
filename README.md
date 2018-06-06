@@ -22,7 +22,7 @@
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
 * [Series Name/Series Number](#series-nameseries-number) (When applicable)</br>
-* [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to) (especially for children's, teenage's and School Books)</br>
+* [Audience Age Range - From/Audience Age Range - To](#audience-age-range---fromaudience-age-range---to) (especially for children's, teenage and school books)</br>
 * [Product Availability](#product-availability)</br>
 * [Imprint](#imprint)</br>
 
@@ -34,7 +34,7 @@
 ### Audiobooks Specific Metadata
 * [Product Form](#product-form)</br>
 * [AudioBook Edition](#audiobook-edition)</br>
-* [Contributor Type](#contributor-type)</br>
+* [Contributor Type](#contributor-type) (Especially “reader” role E07) </br>
 * [Duration](#duration)</br>
 * [File Size](#filesize)</br>
 
@@ -496,6 +496,7 @@ However, in order to make sure the series information is correctly displayed on 
 
 ## Audience Age Range - From/Audience Age Range - To	
 ### Definition</br>
+Especially for children's, teenages and school books. 
 The "From" age value for your eBook's audience age range. The "To" age value for your eBook's audience age range.
 
 ### Best Practice	</br>
@@ -591,7 +592,8 @@ Please consult [BIC Statement on Best Practice for Subtitle Field in Metadata Fe
 
 ## Imprint	
 ### Definition</br>
-Your imprint, or the marketing brand you want to apply to your book, as you want it to appear on the product page on the Rakuten Kobo Store.   
+Your imprint, or the marketing brand you want to apply to your book, as you want it to appear on the product page on the Rakuten Kobo Store.  
+Strongly recommanded, especially if different from Publisher's name. 
 
 ### Best Practice	</br>
 > 
