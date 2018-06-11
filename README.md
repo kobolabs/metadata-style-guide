@@ -28,6 +28,7 @@
 
 ### Recommended if applicable
 * [Subtitle](#subtitle)</br>
+* [Announcement Date](#announcement-date)</br>
 * [Master Brand](#master-brand)</br>
 
 
@@ -591,6 +592,37 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 Book titles, subtitles, series titles or author fields that include extraneous words that are not actually part of the official title, subtitle, series title or author name are not acceptable and lead to confusion and the corruption of metadata standards. We respectfully request that you ensure your catalog of titles does not include such details so that the overall Kobo catalog can offer the purest experience for our customers around the world.
 
 Please consult [BIC Statement on Best Practice for Subtitle Field in Metadata Feeds](http://www.bic.org.uk/files/pdfs/BIC%20Statement%20on%20Best%20Practice%20for%20Sub-title%20field%20FINAL%209th%20March%202018.pdf).
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+## Announcement Date	
+### Definition</br>
+The Announcement Date is when your title is available for customers to preorder before your eBook's official on-sale date.
+
+### Best Practice	</br>
+> Excel: The required date format is YYYY-MM-DD.
+> ONIX: The required date format is YYYYMMDD.
+
+### Correct Usage (example)	</br> 
+Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name**|  <sub>Announcement Date: 2018-06-01</sub>   | `<AnnouncementDate>20180601</AnnouncementDate>`</br>|`<PublishingDate>`</br>`<PublishingDateRole>09</PublishingDateRole>`</br>`<Date>20180601</Date>`</br>`</PublishingDate> `</br>
+**Short Tag**|N/A|`<b086>20180601</b086>`</br>|`<publishingdate> `</br>`<x448>09</x448> `</br>`<b306>20180601</b306>`</br>`</publishingdate>`</br> 
+### :warning: Common Errors (example)	</br>
+* Excel: </br>
+  > Correct: 2010-02-16</br>
+  > Incorrect: 20100216</br>
+  > Incorrect: Jan. 16, 2010</br>
+  > Incorrect: 01-16-2010</br>
+  > Incorrect: 01/16/2010</br>
+* If you want your book to be up for preorder, do not set the same date for announcement date and on sale date/embargo date. For your book to be up for preorder, the announcement date must be prior the on sale date. </br>
+
+### Notes</br>
+If no announcement date is provided, the default date is the date metadata is ingested.
+
+
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
