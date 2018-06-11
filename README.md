@@ -1,6 +1,6 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/Testing/banner-MSG3.png)
 
-*Last update: April 2018*
+*Last update: June 2018*
 
 # Kobo Metadata Style Guide
 
@@ -602,7 +602,7 @@ Please consult [BIC Statement on Best Practice for Subtitle Field in Metadata Fe
 The Announcement Date is when your title is available for customers to preorder before your eBook's official on-sale date.
 
 ### Best Practice	</br>
-> Excel: The required date format is YYYY-MM-DD.
+> Excel: The required date format is YYYY-MM-DD.</br>
 > ONIX: The required date format is YYYYMMDD.
 
 ### Correct Usage (example)	</br> 
@@ -612,7 +612,7 @@ Info               | Excel                       | ONIX 2.1                   | 
 **Short Tag**|N/A|`<b086>20180601</b086>`</br>|`<publishingdate> `</br>`<x448>09</x448> `</br>`<b306>20180601</b306>`</br>`</publishingdate>`</br> 
 ### :warning: Common Errors (example)	</br>
 * Excel: </br>
-  > Correct: 2010-02-16</br>
+  > **Correct: 2010-02-16**</br>
   > Incorrect: 20100216</br>
   > Incorrect: Jan. 16, 2010</br>
   > Incorrect: 01-16-2010</br>
