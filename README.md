@@ -612,11 +612,11 @@ Info               | Excel                       | ONIX 2.1                   | 
 **Short Tag**|N/A|`<b086>20180601</b086>`</br>|`<publishingdate> `</br>`<x448>09</x448> `</br>`<b306>20180601</b306>`</br>`</publishingdate>`</br> 
 ### :warning: Common Errors (example)	</br>
 * Excel: </br>
-  > **Correct: 2010-02-16**</br>
-  > Incorrect: 20100216</br>
-  > Incorrect: Jan. 16, 2010</br>
-  > Incorrect: 01-16-2010</br>
-  > Incorrect: 01/16/2010</br>
+  * **Correct: 2010-02-16**</br>
+  * Incorrect: 20100216</br>
+  * Incorrect: Jan. 16, 2010</br>
+  * Incorrect: 01-16-2010</br>
+  * Incorrect: 01/16/2010</br>
 * If you want your book to be up for preorder, do not set the same date for announcement date and on sale date/embargo date. For your book to be up for preorder, the announcement date must be prior the on sale date. </br>
 
 ### Notes</br>
@@ -633,8 +633,6 @@ If no announcement date is provided, the default date is the date metadata is in
 Your imprint, or the marketing brand you want to apply to your book, as you want it to appear on the product page on the Rakuten Kobo Store.  
 Strongly recommanded, especially if different from Publisher's name. 
 
-### Best Practice	</br>
-> 
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
