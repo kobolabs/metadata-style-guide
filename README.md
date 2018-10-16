@@ -670,6 +670,8 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 
 ## AudioBook Edition	
 *Required Field* - The Edition of your audiobook (Abridged or unabridged version). For unabridged, indicate UBR, for abridged, indicate ABR.</br>
+Because many audiobooks are abridged, it’s important to ensure the consumer knows what they are
+buying. So it’s always best practice to state whether it’s abridged or unabridged.</br>
   
 Should be informed within the `<DescriptiveDetail>` composite. 
 
