@@ -1,6 +1,6 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/Testing/banner-MSG3.png)
 
-*Last update: June 2018*
+*Last update: June 2019*
 
 # Kobo Metadata Style Guide
 
