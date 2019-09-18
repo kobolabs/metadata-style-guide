@@ -40,7 +40,7 @@
 * [File Size](#filesize)</br>
 
 
-
+https://github.com/kobolabs/metadata-style-guide/blob/master/troubleshoot-failures
 </br></br>
 
 ## ISBN 
