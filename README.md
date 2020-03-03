@@ -41,8 +41,8 @@
 
 
 
-:information_source: ONIX files format accepted: .xml, .onix, .onx.
-</br></br>
+</br>:information_source: ONIX files format accepted: .xml, .onix, .onx.</br></br>
+
 
 
 ## ISBN 
