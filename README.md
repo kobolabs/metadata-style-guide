@@ -1,6 +1,6 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/Testing/banner-MSG3.png)
 
-*Last update: June 2019*
+*Last update: March 2020*
 
 # Kobo Metadata Style Guide
 
@@ -40,7 +40,10 @@
 * [File Size](#filesize)</br>
 
 
+
+:information_source: ONIX files format accepted: .xml, .onix, .onx.
 </br></br>
+
 
 ## ISBN 
 
