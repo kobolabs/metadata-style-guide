@@ -2,7 +2,7 @@
 
 *Last update: March 2020*
 
-# Kobo Metadata Style Guide
+# Rakuten Kobo Metadata Style Guide
 
 ## Table of Contents
 ### Required Field
