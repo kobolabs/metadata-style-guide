@@ -18,6 +18,7 @@
 * [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
+* [Descritpion](#description)</br>
 * [Publication Date](#publication-date)</br>
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
@@ -206,6 +207,30 @@ CLIL codes are accepted but mapped to BISAC via our system).</br>
 2017 BISAC subjects codes are supported by Rakuten Kobo.</br>
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+## Description	
+### Definition</br>
+Your eBook's main description/synopsis.
+
+### Best Practice	</br>
+> Description is required for each book in the metadata file.
+> Codes Type supported are code 01, 03, 02, 12, 18, 17.
+> In ONIX 3.0 use <TextType> from list 156. https://ns.editeur.org/onix/en/153
+> In ONIX 2.1 use <TextTypeCode> from List 33.
+
+ 
+ Info              | Excel                       | ONIX 2.1                   | ONIX 3.0
+-------------- | --------------------------- | ---------------------------|---------------------------
+**Reference Name** | Description                           |`<TextTypeCode>03</TextTypeCode>`                      |`<TextType>03</TextType>`</br> 
+**Short Tag**      |N/A                             |`<d102>03</d102>`                          |`<x426>03</x426>`</br>
+**Character Limits**      |No Limit                             |No Limit                          |No Limit </br>
+<sub>Scroll right to see entire table ->></sub>
+</br> 
+
+### Notes</br>
+In order to make sure html is fully supported in your description, you may want to include it in a <CDATA> composite. 
 </br>
 </br>
 
