@@ -1,5 +1,5 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/master/Github_Banner2.png)
-[test](https://github.com/kobolabs/metadata-style-guide/blob/master/troubleshoot-failures)
+
 *Last update: March 2020*
 
 # Rakuten Kobo Metadata Style Guide
