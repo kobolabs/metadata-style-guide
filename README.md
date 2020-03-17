@@ -229,7 +229,7 @@ Your eBook's main description/synopsis.
 
 
 ### Notes</br>
-In order to make sure html is fully supported in your description, you may want to include it in a `CDATA` composite. 
+In order to make sure html is fully supported in your description, you may want to include it in a `<CDATA>` composite. 
 </br>
 <sub>:back: [Table of Contents](#table-of-contents)</sub>
 </br>
