@@ -226,8 +226,7 @@ Your eBook's main description/synopsis.
 **Reference Name** | Description                           |`<TextTypeCode>03</TextTypeCode>`                      |`<TextType>03</TextType>`</br> 
 **Short Tag**      |N/A                             |`<d102>03</d102>`                          |`<x426>03</x426>`</br>
 **Character Limits**      |No Limit                             |No Limit                          |No Limit </br>
-<sub>Scroll right to see entire table ->></sub>
-</br> 
+
 
 ### Notes</br>
 In order to make sure html is fully supported in your description, you may want to include it in a <CDATA> composite. 
