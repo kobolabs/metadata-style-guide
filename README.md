@@ -215,10 +215,10 @@ CLIL codes are accepted but mapped to BISAC via our system).</br>
 Your eBook's main description/synopsis.
 
 ### Best Practice	</br>
-> Description is required for each book in the metadata file.
-> Codes Type supported are code 01, 03, 02, 12, 18, 17.
-> In ONIX 3.0 use <TextType> from list 156. https://ns.editeur.org/onix/en/153
-> In ONIX 2.1 use <TextTypeCode> from List 33.
+> Description is required for each book in the metadata file.</br>
+> Codes Type supported are code 01, 03, 02, 12, 18, 17.</br>
+> In ONIX 3.0 use <TextType> from [list 156](https://ns.editeur.org/onix/en/153).</br>
+> In ONIX 2.1 use <TextTypeCode> from List 33.</br>
 
  
  Info              | Excel                       | ONIX 2.1                   | ONIX 3.0
