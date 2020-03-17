@@ -1,4 +1,4 @@
-![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/Testing/Github_Banner.png)
+![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/Testing/Github_Banner2.png)
 
 *Last update: March 2020*
 
