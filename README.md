@@ -293,7 +293,7 @@ The Price Type Code specifies the type of price submitted (e.g. reommended retai
 > 42 – Agency prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
 > 04 – Fixed retail prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included" </br>
 
-> Please note that we do not support any other PriceTypeCode except: 01/02/03/04/41/42 </br>
+:heavy_check_mark: Please note that we do not support any other PriceTypeCode except: 01/02/03/04/41/42 </br>
 
 ### Correct Usage (example)	</br>
  
