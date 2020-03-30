@@ -293,6 +293,8 @@ The Price Type Code specifies the type of price submitted (e.g. reommended retai
 > 42 – Agency prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included</br>
 > 04 – Fixed retail prices in the EUR, GBP, AUD, NZD, ZAR, JPY and MXN, with tax included" </br>
 
+> Please note that we do not support any other PriceTypeCode except: 01/02/03/04/41/42 </br>
+
 ### Correct Usage (example)	</br>
  
 Info               | Excel                       | ONIX 2.1                   | ONIX 3.0
@@ -304,6 +306,7 @@ Info               | Excel                       | ONIX 2.1                   | 
   * Incorrect price: $3.99</br>
   * Incorrect price: 1,299.99</br>
   * Incorrect currency in Excel: cad, CA</br>
+  * Incorrect/Unsupported Price Type Code.</br>
 
 ### Notes</br>
 **Excel and ONIX**: JPY prices must be listed as a whole number with zero decimal values. Hiding decimal places with values other than zero will cause your entry to **fail**. 
