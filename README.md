@@ -217,13 +217,13 @@ Your eBook's main description/synopsis.
 ### Best Practice	</br>
 > Description is required for each book in the metadata file.</br>
 > Codes Type supported are codes 03, 01, 02, 12, 18, 17.</br>
-> In ONIX 3.0 use <TextType> from [list 156](https://ns.editeur.org/onix/en/153).</br>
-> In ONIX 2.1 use <TextTypeCode> from List 33.</br>
+> In ONIX 3.0 use <TextContent><TextType><Text>[...] - <TextType> from [list 156](https://ns.editeur.org/onix/en/153).</br>
+> In ONIX 2.1 use <OtherText><TextTypeCode><Text>[...] - <TextType> from List 33.</br>
 
  
  Info              | Excel                       | ONIX 2.1                   | ONIX 3.0
 -------------- | --------------------------- | ---------------------------|---------------------------
-**Reference Name** | Description                           |`<TextTypeCode>03</TextTypeCode>`                      |`<TextType>03</TextType>`</br> 
+**Reference Name** | Description                           |`<OtherText>`</br>`<TextTypeCode>03</TextTypeCode>`</br>`<Text>Text of the description</Text>`</br>`</OtherText>`</br>                  |`<TextContent>`</br> `<TextType>03</TextType>`</br> `<Text><p>Text of the main description</p></Text>`</br>`</TextContent>`</br> 
 **Short Tag**      |N/A                             |`<d102>03</d102>`                          |`<x426>03</x426>`</br>
 **Character Limits**      |No Limit                             |No Limit                          |No Limit </br>
 
