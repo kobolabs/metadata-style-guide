@@ -687,14 +687,14 @@ The availability information of your title, regarding Kobo Subscription program 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 3.0 (ONLY)
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** |Use the propriatery Excel Template for subs.</br> We need ISBN, geo availability and start and end dates if necessary.| 3 Tags are to be used: `<SalesRestrictionType>` (mandatory)</br> to opt-in for Kobo+, use code 13 or 99; </br> to opt-out for Kobo+, use code 12; </br> `<StartDate>` & `<EndDate>`  (optional); </br> `<CountryIncluded>` (mandatory) to indicate in which you want to opt-in (or opt-out) your book. Use `<RegionIncluded>ALL</RegionIncluded>` top opt-in in all available Kobo+ countries.</br></br> `<ProductSupply>`</br>`<Market>`</br>`<Territory>`</br>`<CountryIncluded>`NL BE US CA PT`</CountryIncluded>` </br>`</Territory>`</br>`<SalesRestriction>`</br>`<SalesRestrictionType>`13`</SalesRestrictionType>`</br>`<StartDate>`20210625`</StartDate>` `<!--optional-->`</br>`<EndDate>`20250625`</EndDate>` `<!--optional-->`</br>`</SalesRestriction>`</br>`</Market>`</br>`</ProductSupply >`</br> 
-**Short Tag**      |  N/A                           |`<SalesRestrictionType>`=`<b381>`13`</b381>`</br>
+**Reference Name** |Use the propriatery Excel Template for subs.</br> We need ISBN, geo availability and start and end dates if necessary.| 3 Tags are to be used:</br> * `<SalesRestrictionType>` (mandatory)</br> * to opt-in for Kobo+, use code 13 or 99; </br> * to opt-out for Kobo+, use code 12; </br> * `<StartDate>` & `<EndDate>`  (optional); </br> * `<CountryIncluded>` (mandatory) to indicate in which you want to opt-in (or opt-out) your book. * Use `<RegionIncluded>ALL</RegionIncluded>` to opt-in in all available Kobo+ countries.</br></br> `<ProductSupply>`</br>`<Market>`</br>`<Territory>`</br>`<CountryIncluded>NL BE US CA PT</CountryIncluded>` </br>`</Territory>`</br>`<SalesRestriction>`</br>`<SalesRestrictionType>13</SalesRestrictionType>`</br>`<StartDate>20210625</StartDate>` `<!--optional-->`</br>`<EndDate>20250625</EndDate>` `<!--optional-->`</br>`</SalesRestriction>`</br>`</Market>`</br>`</ProductSupply >`</br> 
+**Short Tag**      |  N/A                           |`<SalesRestrictionType>`=`<b381>13</b381>`</br>
   
 **Notes**	</br>
 * A la carte global Sales rights will always take precedence for Kobo Plus activations. A title with no sales rights for Canada at the product level will not be activated for Kobo Plus in Canada, no matter of what the `<SalesRestriction>` composite says. </br> 
-* If your agreement with Kobo allows for full catalogue opt-in for Kobo Plus, you do not have to resend ONIX metadata to activate your catalogue.</br>  
-* ONIX 2.1 is not supported.</br> 
-* If your account is configured for full catalogue activated for KoboPlus by default, just use above codes to change the status accordingly (code 12 to remove from KoboPlus, code 13 or 99 to put back into KoboPlus).</br>
+* If your agreement with Kobo allows for full catalogue opt-in for Kobo+, you do not have to resend ONIX metadata to activate your catalogue.</br>  
+* <b>ONIX 2.1 is not supported.<b></br> 
+* If your account is configured for full catalogue activated for KoboPlus by default, just use above codes to change the status accordingly (code 12 to remove from KoboPlus, code 13 or 99 to put back into Kobo+).</br>
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
