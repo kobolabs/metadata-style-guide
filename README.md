@@ -682,7 +682,7 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 
 ## Kobo+ Subscription	
 ### Definition</br>
-The availability information of your title, regarding Kobo Subscription program Kobo+. 
+The availability information of your title regarding Kobo Subscription Program Kobo+. 
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 3.0 (ONLY)
@@ -693,7 +693,7 @@ Info               | Excel                       | ONIX 3.0 (ONLY)
 **Notes**	</br>
 * A la carte global Sales rights will always take precedence for Kobo Plus activations. A title with no sales rights for Canada at the product level will not be activated for Kobo Plus in Canada, no matter of what the `<SalesRestriction>` composite says. </br> 
 * If your agreement with Kobo allows for full catalogue opt-in for Kobo+, you do not have to resend ONIX metadata to activate your catalogue.</br>  
-* <b>ONIX 2.1 is not supported.<b></br> 
+* <b>ONIX 2.1 is not supported.</b></br> 
 * If your account is configured for full catalogue activated for KoboPlus by default, just use above codes to change the status accordingly (code 12 to remove from KoboPlus, code 13 or 99 to put back into Kobo+).</br>
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
