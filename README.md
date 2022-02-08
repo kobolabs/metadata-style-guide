@@ -1,6 +1,6 @@
 ![background sidebar image](https://github.com/kobolabs/metadata-style-guide/blob/master/Github_Banner2.png)
 
-*Last update: March 2020*
+*Last update: Nov 2021*
 
 # Rakuten Kobo Metadata Style Guide
 
