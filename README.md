@@ -416,7 +416,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<PriceAmount>10.00</PriceAmount>`</br>
 `<CurrencyCode>USD</CurrencyCode>`</br>
 `</Price>`</br>
-**--- the above price wis the regular price. It does not contain dates. the price will stop as soon as the below promo dates will be reached and be back at the end date**</br>
+**--- the above price is the regular price. It does not contain any dates. the price will stop as soon as the below promo dates will be reached and be back at the end date.---**</br>
 `<Price>`</br>
 `<PriceType>01</PriceType>`</br>
 `<PriceQualifier>08</PriceQualifier>` -- **Mandatory** </br>
