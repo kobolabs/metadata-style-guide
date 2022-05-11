@@ -32,6 +32,7 @@
 * [Subtitle](#subtitle)</br>
 * [Announcement Date](#announcement-date)</br>
 * [Master Brand](#master-brand)</br>
+* [Preview Management](#preview-management)</br>
 
 
 ### Audiobooks Specific Metadata
@@ -676,6 +677,64 @@ Info               | Excel                       | ONIX 2.1 and 3.0
 **Character Limits**	|250|250
 
 
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+## Preview Management	
+### Definition</br>
+Previews are a great way to promote your books. At Kobo, you can control the amount of content made available in the preview. This can be done either in your metadata feed or at in your Kobo account settings.</br></br>
+
+### At default account level</br>
+Kobo can set some preview settings to apply by default to all books loaded to your FTP.</br>
+At the publisher account level, previews are set to display 5% of the ePub’s content by default. The maximum percentage that accounts can be set to is 25%.</br>
+Your account can be set up so that previews for all books are automatically turned on or automatically turned off when you load a title.
+</br>
+
+### Customizable preview via metadata at product level</br>
+You can set the preview amount on the individual title level. Previews can be set between 0% and 25%.</br>
+You can use the Rakuten Kobo Excel metadata template or **ONIX 3.0 (only)**, using `<EpubUsageType>` (code 01 “Preview”),  `<EpubUsageStatus>` (code 01, 02 or 03) or `<EpubUsageLimit>`.</br>
+
+
+
+### Example	</br>
+| ONIX 2.1 and 3.0
+| --------------------------- 
+|`<EpubUsageConstraint>`</br>
+`<EpubUsageType>01</EpubUsageType>`</br>   
+`<EpubUsageStatus>02</EpubUsageStatus>`</br>  
+`<EpubUsageLimit>`</br>  
+`<Quantity>5</Quantity>`  **--where 5 is value 5)**</br> 
+`<EpubUsageUnit>05</EpubUsageUnit>` **--where 05 = percentage**</br> 
+`</EpubUsageLimit>`</br>  
+`</EpubUsageConstraint>`</br>  
+
+`<EpubUsageStatus>`</br>  
+
+* in case of code 01 - percentage is 25</br>  
+* in case of 03 - percentage is 0</br>  
+* in case of 02 - percentage set is based on epubUsageUnit and quantity</br>  
+
+### How to deactivate a preview</br>  
+
+In the same way as stated above for adjusting the preview percentage, you can also deactivate the preview via the Rakuten Kobo Excel metadata file or via ONIX 3.0 using: **`<Quantity>0</Quantity>`**. This will set the preview display at 0%.</br> 
+
+| ONIX 2.1 and 3.0
+| --------------------------- 
+|`<EpubUsageConstraint>`</br>
+`<EpubUsageType>01</EpubUsageType>`</br>   
+`<EpubUsageStatus>02</EpubUsageStatus>`</br>  
+`<EpubUsageLimit>`</br>  
+**`<Quantity>0</Quantity>`**</br> 
+`<EpubUsageUnit>05</EpubUsageUnit>`</br> 
+`</EpubUsageLimit>`</br>  
+`</EpubUsageConstraint>`</br>  
+
+### Custom preview files
+
+You can also upload custom previews by using the naming convention **ISBN_preview.epub** or **ISBN_sample.epub** in the preview files you distribute. Our system will automatically recognize it as a publisher custom preview and use it in place of the automatically created preview from your ePub.</br> 
+
+**Note**: The Kobo system will only created previews for reflowable ePub, ePub 3, and ePub 3 fixed-layout files. 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
