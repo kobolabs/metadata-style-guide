@@ -700,14 +700,7 @@ You can use the Rakuten Kobo Excel metadata template or **ONIX 3.0 (only)**, usi
 ### Example	</br>
 | ONIX 2.1 and 3.0
 | --------------------------- 
-|`<EpubUsageConstraint>`</br>
-`<EpubUsageType>01</EpubUsageType>`</br>   
-`<EpubUsageStatus>02</EpubUsageStatus>`</br>  
-`<EpubUsageLimit>`</br>  
-`<Quantity>5</Quantity>`  **--where 5 is value 5)**</br> 
-`<EpubUsageUnit>05</EpubUsageUnit>` **--where 05 = percentage**</br> 
-`</EpubUsageLimit>`</br>  
-`</EpubUsageConstraint>`</br>  
+|`<EpubUsageConstraint>`</br>`<EpubUsageType>01</EpubUsageType>`</br>   `<EpubUsageStatus>02</EpubUsageStatus>`</br>  `<EpubUsageLimit>`</br>  `<Quantity>5</Quantity>`  **--where 5 is value 5)**</br> `<EpubUsageUnit>05</EpubUsageUnit>` **--where 05 = percentage**</br> `</EpubUsageLimit>`</br>`</EpubUsageConstraint>`</br>  
 
 `<EpubUsageStatus>`</br>  
 
@@ -719,22 +712,15 @@ You can use the Rakuten Kobo Excel metadata template or **ONIX 3.0 (only)**, usi
 
 In the same way as stated above for adjusting the preview percentage, you can also deactivate the preview via the Rakuten Kobo Excel metadata file or via ONIX 3.0 using: **`<Quantity>0</Quantity>`**. This will set the preview display at 0%.</br> 
 
-| ONIX 2.1 and 3.0
+| ONIX 3.0 only
 | --------------------------- 
-|`<EpubUsageConstraint>`</br>
-`<EpubUsageType>01</EpubUsageType>`</br>   
-`<EpubUsageStatus>02</EpubUsageStatus>`</br>  
-`<EpubUsageLimit>`</br>  
-**`<Quantity>0</Quantity>`**</br> 
-`<EpubUsageUnit>05</EpubUsageUnit>`</br> 
-`</EpubUsageLimit>`</br>  
-`</EpubUsageConstraint>`</br>  
+|`<EpubUsageConstraint>`</br>`<EpubUsageType>01</EpubUsageType>`</br> `<EpubUsageStatus>02</EpubUsageStatus>`</br>  `<EpubUsageLimit>`</br>  **`<Quantity>0</Quantity>`**</br>`<EpubUsageUnit>05</EpubUsageUnit>`</br>`</EpubUsageLimit>`</br>`</EpubUsageConstraint>`</br>  
 
 ### Custom preview files
 
 You can also upload custom previews by using the naming convention **ISBN_preview.epub** or **ISBN_sample.epub** in the preview files you distribute. Our system will automatically recognize it as a publisher custom preview and use it in place of the automatically created preview from your ePub.</br> 
 
-**Note**: The Kobo system will only created previews for reflowable ePub, ePub 3, and ePub 3 fixed-layout files. 
+**Note**: The Kobo system will only created previews for reflowable ePub, ePub 3, and ePub 3 fixed-layout files. </br>
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
 </br>
 </br>
