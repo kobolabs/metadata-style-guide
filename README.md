@@ -15,6 +15,7 @@
 * [Sales Rights](#sales-rights)</br>
 * [Price/Price Type Code (ONIX only)](#priceprice-type-code-onix-only)</br>
 * [Price Effective Date & Price Date Role (ONIX only)](#price-effective-date--price-date-role-onix-only)</br>
+* [Other Promo Price settings (ONIX only)](#other-promo-price-settings-onix-only)</br>
 * [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
@@ -326,7 +327,7 @@ In both Excel and ONIX free titles must be listed with a 0 or 0.00 value.
 Price Effective Date (ONIX 2.1) and Price Date Role (ONIX 3.0) composites allow you to schedule promotional prices with your ONIX feed.
 
 ### Best Practice	</br>
-Rakuten Kobo supports the three price method only: 
+Rakuten Kobo supports the three price method: 
   > * Ensure your starting regular price has an end date. Otherwise, our system won’t know to look for a new price.</br>
   > * Ensure the promo price has both a start and end date. </br>
   > * Ensure your regular price is reinstated by including a new start date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. 
@@ -392,6 +393,46 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `</PriceDate>`</br>
 `</Price>`</br>
 **--- the regular price is reinstated at 0:00 EST on Dec 31**</br>
+
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+## Other Promo Price Settings (ONIX only)	
+
+### Best Practice	</br>
+Since Spring 2022, Rakuten Kobo support a 2 prices method to schedule promotions via Onix 3.0: 
+  > * Ensure your price composite uses '<PriceQualifier>' code 08 as "promotional offer price".</br>
+  > * Ensure the promo price has both a start and end date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. </br>
+  > * Ensure your regular price does not contain any dates. 
+
+### Correct Usage (example)	</br>
+Example of a sample scheduled price reduction, with embedded comments for clarification:
+
+Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and PriceDateRole 15 = Until Date**</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceAmount>10.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`</Price>`</br>
+**--- the above price wis the regular price. It does not contain dates. the price will stop as soon as the below promo dates will be reached and be back at the end date**</br>
+`<Price>`</br>
+`<PriceType>01</PriceType>`</br>
+`<PriceQualifier>08</PriceQualifier>` -- **Mandatory** </br>
+`<PriceAmount>8.00</PriceAmount>`</br>
+`<CurrencyCode>USD</CurrencyCode>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>14</PriceDateRole>`</br>
+`<Date>20151222</Date>`</br>
+`</PriceDate>`</br>
+`<PriceDate>`</br>
+`<PriceDateRole>15</PriceDateRole>`</br>
+`<Date>20151230</Date>`</br>
+`</PriceDate>`</br>
+`</Price>`</br>
+**--- the promo price starts at 0:00 EST on Dec 22 and ends 23:59 EST Dec 30**</br>
+**--- the regular price is automatically reinstated at 0:00 EST on Dec 31**</br>
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
