@@ -698,12 +698,11 @@ You can use the Rakuten Kobo Excel metadata template or **ONIX 3.0 (only)**, usi
 
 
 ### Example	</br>
-| ONIX 2.1 and 3.0
+| ONIX 3.0 only
 | --------------------------- 
 |`<EpubUsageConstraint>`</br>`<EpubUsageType>01</EpubUsageType>`</br>   `<EpubUsageStatus>02</EpubUsageStatus>`</br>  `<EpubUsageLimit>`</br>  `<Quantity>5</Quantity>`  **--where 5 is value 5)**</br> `<EpubUsageUnit>05</EpubUsageUnit>` **--where 05 = percentage**</br> `</EpubUsageLimit>`</br>`</EpubUsageConstraint>`</br>  
 
-`<EpubUsageStatus>`</br>  
-
+`<EpubUsageStatus>`:</br>  
 * in case of code 01 - percentage is 25</br>  
 * in case of 03 - percentage is 0</br>  
 * in case of 02 - percentage set is based on epubUsageUnit and quantity</br>  
