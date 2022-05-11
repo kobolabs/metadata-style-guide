@@ -399,7 +399,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 </br>
 </br>
 
-## Other Promo Price Settings (ONIX 3.0 only)	
+## Other Promo Price Settings (ONIX only)	
 
 ### Best Practice	</br>
 Since Spring 2022, Rakuten Kobo support a 2 prices method to schedule promotions via Onix 3.0: 
