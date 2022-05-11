@@ -403,7 +403,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 
 ### Best Practice	</br>
 Since Spring 2022, Rakuten Kobo support a 2 prices method to schedule promotions via Onix 3.0: 
-  > * Ensure your price composite uses '<PriceQualifier>' code 08 as "promotional offer price".</br>
+  > * Ensure your price composite uses `<PriceQualifier>` code 08 as "promotional offer price".</br>
   > * Ensure the promo price has both a start and end date. All dates are inclusive: they start at 0:00 and end at 23:59 EST of the specified start and end dates. </br>
   > * Ensure your regular price does not contain any dates. 
 
@@ -416,7 +416,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 `<PriceAmount>10.00</PriceAmount>`</br>
 `<CurrencyCode>USD</CurrencyCode>`</br>
 `</Price>`</br>
-**--- the above price is the regular price. It does not contain any dates. the price will stop as soon as the below promo dates will be reached and be back at the end date.---**</br>
+**--- the above price is the regular price. It does not contain any dates. The price will stop as soon as the below promo dates will be reached and be back at the end date.---**</br>
 `<Price>`</br>
 `<PriceType>01</PriceType>`</br>
 `<PriceQualifier>08</PriceQualifier>` -- **Mandatory** </br>
