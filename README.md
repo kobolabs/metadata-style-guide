@@ -15,7 +15,7 @@
 * [Sales Rights](#sales-rights)</br>
 * [Price/Price Type Code (ONIX only)](#priceprice-type-code-onix-only)</br>
 * [Price Effective Date & Price Date Role (ONIX only)](#price-effective-date--price-date-role-onix-only)</br>
-* [Other Promo Price settings (ONIX only)](#other-promo-price-settings-onix-only)</br>
+* [Other Promo Price settings (ONIX 3.0 only)](#other-promo-price-settings-onix-3-0-only)</br>
 * [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
