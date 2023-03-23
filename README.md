@@ -188,7 +188,7 @@ Please note that currently we don't support multiple language codes for a single
 
 ## Language localization and script code
 ### Definition</br>
-In order to enable customers to filter content based on their local language preference, for instance Brazilian Portuguese from Portuguese from Portugal, you can specify the country of the language. 
+You can specify the country of the language to allow customers to filter the content based on their local language preference. For instance, to differentiate Brazilian Portuguese from Portugal Portuguese.
 </br></br>Additionally, the script code indicates what alphabet/script a book is written in. 
 For Portuguese for instance, LATN (Latin) is what we would expect. For Chinese though, we would expect HANS and HANT to signify Simplified Chinese Characters or Traditional Chinese characters.
 </br>
