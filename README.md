@@ -204,7 +204,7 @@ Excel: </br>CHINESE </br> Simplified Chinese</br> chi, Hans, CN  </br>CN-chi-Han
 
 ### To summarize, we expect you to send:</br> 
   > * 3 letters language code: ENG, FRA, POR, etc.  
-  > * 2 letters locale: BR, PT, CA, GB, etc.  
+  > * 2 letters local code: BR, PT, CA, GB, etc.  
   > * If needed, 4 letters script code: LATN, HANS, HANT, etc.  
 
 
