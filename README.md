@@ -195,13 +195,12 @@ For Portuguese for instance, LATN (Latin) is what we would expect. For Chinese t
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
 -------------- | --------------------------- | --------------------------- 
-**Reference Name** | Language: pt-BR</br>chi-Hans-CN (for the script code option)                        | For the language localization:</br> `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>por</LanguageCode>`</br>`<CountryCode>BR</CountryCode>`</br>`</Language>`</br> 
-</br>For the Script code:</br> `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>chi</LanguageCode>`</br>`<ScriptCode>Hans</ScriptCode>`</br>`</Language>`</br> 
+**Reference Name** | Language: pt-BR</br>chi-Hans-CN (for the script code option, within the language cell)                        | For the language localization:</br> `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>por</LanguageCode>`</br>`<CountryCode>BR</CountryCode>`</br>`</Language>`</br>For the Script code:</br> `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>chi</LanguageCode>`</br>`<ScriptCode>Hans</ScriptCode>`</br>`</Language>`</br> 
 **Short Tag**      | N/A                            |For the language localization:</br>`<language>`</br>`<b253>01</b253>`</br>`<b252>eng</b252>`</br>`<x449>BR</x449>`</br>`</language>`</br>
-</br>For the Script code:</br> `<Language>`</br>`<b253>01</b253>`</br>`<b252>chi</b252>`</br>`<x420>Hans</x420>`</br>`</Language>`</br> 
+For the Script code:</br> `<Language>`</br>`<b253>01</b253>`</br>`<b252>chi</b252>`</br>`<x420>Hans</x420>`</br>`</Language>`</br> 
 
 ### :warning: Incorrect (example)	</br>
-Excel: CHINESE </br> Simplified Chinese</br> chi, Hans, CN  </br>CN-chi-Hans </br>
+Excel: </br>CHINESE </br> Simplified Chinese</br> chi, Hans, CN  </br>CN-chi-Hans </br>
 
 
 ### To summarize, we expect you to send:</br> 
