@@ -190,7 +190,7 @@ Please note that currently we don't support multiple language codes for a single
 ### Definition</br>
 You can specify the country of the language to allow customers to filter the content based on their local language preference. For instance, to differentiate Brazilian Portuguese from Portugal Portuguese.
 </br></br>Additionally, the script code indicates what alphabet/script a book is written in. 
-For Portuguese for instance, LATN (Latin) is what we would expect. For Chinese though, we would expect HANS and HANT to signify Simplified Chinese Characters or Traditional Chinese characters.
+For Portuguese for instance, LATN (Latin) is what we would expect. For Chinese, we would expect HANS or HANT, respectively “Simplified Chinese Characters” or “Traditional Chinese characters”.
 </br>
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
