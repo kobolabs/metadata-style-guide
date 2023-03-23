@@ -34,6 +34,7 @@
 * [Announcement Date](#announcement-date)</br>
 * [Master Brand](#master-brand)</br>
 * [Preview Management](#preview-management)</br>
+* [Language localization and script code](#language-localization-and-script-code)</br>
 
 
 ### Audiobooks Specific Metadata
@@ -178,6 +179,44 @@ Excel: BRL, English, Eng
 
 ### Notes</br>
 Please note that currently we don't support multiple language codes for a single title. Please choose one specific language code for the text and include information about the bilingual nature of the text in the description. We suggest selecting the language code for the audience the title most widely serves. 
+
+
+<sub>:back:[Table of Contents](#table-of-contents)</sub>
+</br>
+</br>
+
+
+## Language localization and script code
+### Definition</br>
+In order to enable customers to filter content based on their local language preference, for instance Brazilian Portuguese from Portuguese from Portugal, you can specify the country of the language. 
+</br></br>Additionally, the script code indicates what alphabet/script a book is written in. 
+For Portuguese for instance, LATN (Latin) is what we would expect. For Chinese though, we would expect HANS and HANT to signify Simplified Chinese Characters or Traditional Chinese characters.
+</br>
+### Correct Usage (example)	</br>
+Info               | Excel                       | ONIX 2.1 and 3.0
+-------------- | --------------------------- | --------------------------- 
+**Reference Name** | Language: pt-BR</br>chi-Hans-CN (for the script code option)                        | For the language localization:</br> `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>por</LanguageCode>`</br>`<CountryCode>BR</CountryCode>`</br>`</Language>`</br> 
+</br>For the Script code:</br> `<Language>`</br>`<LanguageRole>01</LanguageRole>`</br>`<LanguageCode>chi</LanguageCode>`</br>`<ScriptCode>Hans</ScriptCode>`</br>`</Language>`</br> 
+**Short Tag**      | N/A                            |For the language localization:</br>`<language>`</br>`<b253>01</b253>`</br>`<b252>eng</b252>`</br>`<x449>BR</x449>`</br>`</language>`</br>
+</br>For the Script code:</br> `<Language>`</br>`<b253>01</b253>`</br>`<b252>chi</b252>`</br>`<x420>Hans</x420>`</br>`</Language>`</br> 
+
+### :warning: Incorrect (example)	</br>
+Excel: CHINESE </br> Simplified Chinese</br> chi, Hans, CN  </br>CN-chi-Hans </br>
+
+
+### To summarize, we expect you to send:</br> 
+  > * 3 letters language code: ENG, FRA, POR, etc.  
+  > * 2 letters locale: BR, PT, CA, GB, etc.  
+  > * If needed, 4 letters script code: LATN, HANS, HANT, etc.  
+
+
+
+
+
+
+
+
+
 
 
 <sub>:back:[Table of Contents](#table-of-contents)</sub>
