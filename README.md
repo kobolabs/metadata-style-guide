@@ -481,7 +481,7 @@ Onix 3.0 uses the PriceDateRole tags where PriceDateRole 14 = From Date and Pric
 Your eBook's publishing status.
 
 ### Best Practice	</br>
-> To place your title for sale or preorder, indicate active. To remove your title from sale, indicate deactivated.
+> With Excel, to place your title for sale or preorder, indicate active. To remove your title from sale, indicate deactivated.
 
 ### Correct Usage (example)	</br>
 Info               | Excel                       | ONIX 2.1 and 3.0
