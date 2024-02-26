@@ -19,7 +19,7 @@
 * [Publishing Status](#publishing-status)</br>
 
 ### Strongly Recommended
-* [Descritpion](#description)</br>
+* [Description](#description)</br>
 * [Publication Date](#publication-date)</br>
 * [On Sale Date (ONIX 2.1) / Embargo Date (ONIX 3.0)](#on-sale-date-onix-21--embargo-date-onix-30)</br>
 * [Related Product](#related-product)</br>
